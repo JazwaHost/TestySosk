@@ -1,0 +1,381 @@
+/* Main config */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: #d4bf00;
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--content);
+}
+
+:root[color-mode="light"] {
+  --surface1: #eeeeee;
+  --surface2: #dddddd;
+  --surface3: #909090;
+  --nav: #ffdb58;
+  --text: #000;
+  --text2: #ffffff;
+  --content: #ffdb58;
+}
+
+:root[color-mode="dark"] {
+  --surface1: #303030;
+  --surface2: #252525;
+  --surface3: #151515;
+  --nav: #151515;
+  --text: #fff;
+  --text2: #202020;
+  --content: #ffdb58;
+}
+
+:root[color-mode="light"] .light--hidden {
+  display: none;
+}
+
+:root[color-mode="dark"] .dark--hidden {
+  display: none;
+}
+
+body {
+  background: var(--surface1, #303030);
+  color: var(--text, #fff);
+  font-family: "verdana", sans-serif;
+  transition: 0.5s;
+  text-shadow: 1px 1px #909090;
+}
+
+/* Nav config */
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+.nav_header {
+  width: 100%;
+  height: 80px;
+  background: var(--nav);
+  display: flex;
+  transition: 0.5s;
+}
+
+.nav_header a {
+  width: 7%;
+  padding: 5px;
+}
+
+.logo {
+  width: 140px;
+}
+
+.togglescheme {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 2%;
+}
+
+.color-mode__btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  outline: inherit;
+}
+
+.color-mode__btn img {
+  width: 150%;
+}
+/* Nav menu */
+.links {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  background: var(--surface2);
+}
+
+li,
+.dropbtn a {
+  font-size: 1.5vw;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.active,
+.active:hover {
+  background: var(--content);
+}
+
+#countdown_div {
+  position: absolute;
+  text-align: center;
+  bottom: 100px;
+  width: 90%;
+  margin-left: 5%;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+#countdown {
+  width: 100%;
+  padding: 20px 0px;
+  background-color: var(--content);
+  font-size: 1.5vw;
+  border-radius: 20px;
+}
+
+#countdowntitle {
+  font-weight: 900;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 80%;
+  margin-left: 20%;
+  background: var(--surface2);
+  font-size: 1vw;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  background-color: var(--content);
+  color: var(--text);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Dropdowns config */
+.dropbtn {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  outline: none;
+  display: block;
+  text-shadow: 1px 1px #909090;
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  z-index: 1;
+  background-color: var(--surface2);
+  font-size: 1vw;
+}
+
+.dropdown-content a {
+  color: inherit;
+  padding: 5px 30px;
+  text-decoration: none;
+  display: block;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 10px;
+  display: block;
+}
+
+.dropdown:hover .dropbtn,
+li:hover {
+  background: var(--surface3);
+  transition: 0.2s ease;
+}
+
+.dropdown-content a:hover {
+  background: var(--surface1);
+  transition: 0.2s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Container config */
+.space {
+  width: 100%;
+  height: 80px;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-top: 1%;
+}
+
+.content {
+  width: 90%;
+  background-color: var(--content);
+  margin: auto;
+  border-radius: 20px;
+  padding: 20px;
+  color: var(--text);
+  box-shadow: 0px 0px 15px #000;
+  overflow: auto;
+}
+
+.container p {
+  font-size: 1vw;
+  float: none;
+}
+
+.container a {
+  text-decoration: none;
+  color: var(--text2);
+  text-shadow: none;
+  font-weight: 600;
+}
+
+.file {
+  width: 30%;
+  margin-right: 1%;
+  margin-left: 1%;
+  height: 50px;
+  float: left;
+  border: 3px solid var(--text2);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile config */
+@media screen and (max-width: 767px) {
+  /* Nav config mobile */
+  .logo {
+    width: 120px;
+    padding: 5px;
+  }
+
+  .togglescheme {
+    margin-right: 6%;
+  }
+  /* Toggle Nav config */
+  .navtogglediv {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 7%;
+  }
+
+  .navtoggle {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--text);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+  /* Nav menu */
+  li,
+  .dropbtn a {
+    font-size: 4vw;
+    font-weight: 400;
+    cursor: default;
+  }
+
+  #countdown_div {
+    bottom: 100px;
+    width: 90%;
+  }
+
+  #countdown {
+    padding: 20px 0px;
+    background-color: var(--content);
+    font-size: 4vw;
+    border-radius: 20px;
+  }
+
+  /* Dropdowns config */
+  .links {
+    width: 0;
+    display: none;
+  }
+
+  .navt {
+    width: 100%;
+    display: block;
+  }
+
+  .dropdown-content {
+    font-size: 3.5vw;
+  }
+
+  /* Container config */
+  .space {
+    width: 100%;
+    height: 80px;
+  }
+
+  .container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .content {
+    width: 85%;
+    margin-top: 3%;
+  }
+
+  .container p {
+    font-size: 4vw;
+  }
+
+  .file {
+    width: 98%;
+    float: none;
+    border: 3px solid var(--text2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+  }
+
+  footer {
+    width: 100%;
+    margin-left: 0;
+    font-size: 2.5vw;
+  }
+}

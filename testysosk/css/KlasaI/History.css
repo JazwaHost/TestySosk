@@ -1,0 +1,61 @@
+.table_1_div {
+  width: 44%;
+  margin-top: 2%;
+  float: left;
+}
+
+.table_1 {
+  width: 100%;
+  height: 65.9vw;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.table_2_div {
+  width: 42%;
+  margin-top: 2%;
+  float: left;
+  margin-left: 10%;
+}
+
+.table_2 {
+  width: 100%;
+  height: 39.2vw;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.table_3_div {
+  width: 42%;
+  margin-top: 2%;
+  float: left;
+  margin-left: 10%;
+}
+
+.table_3 {
+  width: 100%;
+  height: 24.5vw;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+  .table_2_div,
+  .table_1_div,
+  .table_3_div {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .table_1 {
+    height: 178vw;
+  }
+
+  .table_2 {
+    height: 110vw;
+  }
+
+  .table_3 {
+    height: 110vw;
+  }
+}

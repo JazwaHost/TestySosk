@@ -1,0 +1,41 @@
+.table_1_div {
+  width: 15%;
+  margin-top: 1%;
+}
+
+.table_1 {
+  width: 100%;
+  height: 12vw;
+  border-radius: 5px;
+}
+
+.table_2_div {
+  width: 36.3%;
+  margin-top: 1%;
+}
+
+.table_2 {
+  width: 100%;
+  height: 10.5vw;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .table_1_div {
+    width: 60%;
+    margin-left: 2.5%;
+  }
+
+  .table_2_div {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .table_1 {
+    height: 55vw;
+  }
+
+  .table_2 {
+    height: 51vw;
+  }
+}

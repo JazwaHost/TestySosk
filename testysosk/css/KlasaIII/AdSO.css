@@ -1,0 +1,46 @@
+.table_1_div {
+  width: 46.5%;
+  margin-top: 2%;
+  margin-right: 5%;
+  float: left;
+}
+
+.table_1 {
+  width: 100%;
+  height: 14.5vw;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.table_2_div {
+  width: 27%;
+  margin-top: 2%;
+  float: left;
+}
+
+.table_2 {
+  width: 100%;
+  height: 13vw;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 768px) {
+  .table_1_div,
+  .table_2_div {
+    width: 95%;
+    margin-left: 2.5%;
+    float: none;
+  }
+
+  .table_1 {
+    height: 70vw;
+  }
+
+  .table_2 {
+    width: 100%;
+    height: 65vw;
+    border-radius: 5px;
+    margin-bottom: 2%;
+  }
+}
