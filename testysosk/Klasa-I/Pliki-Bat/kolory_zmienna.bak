@@ -1,0 +1,21 @@
+@echo off
+rem napisz instrukcjê dla u¿ytkownika!
+set /p kolor=podaj kolor:
+if "%kolor%"=="red" goto czerwony
+if "%kolor%"=="green" goto zielony
+if "%kolor%"=="blue" goto niebieski
+goto koniec
+:czerwony
+color 47
+echo CZERWONY
+goto koniec
+:zielony
+color 27
+echo ZIELONY
+goto koniec
+:niebieski
+color 17
+echo NIEBIESKI
+goto koniec
+:koniec
+pause

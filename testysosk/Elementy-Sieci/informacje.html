@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pl-PL" color-mode="light">
+<head>
+    <title>Klasa I - Informacje</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="TestySosk - Klasa I" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/Information.css" />
+    <link rel="stylesheet" href="../CSS/Elementy Sieci/information.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <a href="../index.html">
+                    <img class="logo" src="../img/icon.png">
+                </a>
+                <div class="togglescheme">
+                    <button class="color-mode__btn light--hidden">
+                        <img src="../img/sun.svg"/>
+                    </button>
+                    <button class="color-mode__btn dark--hidden">
+                        <img src="../img/moon.svg"/>
+                    </button>
+                </div>
+                <div class="navtogglediv">
+                    <div class="navtoggle" onclick="openNav(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <div class="links" id="links">
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa I</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-I/informacje.html">Informacje</a>
+                            <a href="../Klasa-I/historia.html">Historia</a>
+                            <a href="../Klasa-I/prawa-autorskie.html">Prawa autorskie</a>
+                            <a href="../Klasa-I/so-charakterystyka.html">SO Charakterystyka</a>
+                            <a href="../Klasa-I/pliki-bat.html">Pliki BAT</a>
+                            <a href="../Klasa-I/uprawnienia-ntfs.html">Uprawnienia NTFS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa II</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-II/informacje.html">Informacje</a>
+                            <a href="../Klasa-II/peryferyjne.html">Peryferyjne</a>
+                            <a href="../Klasa-II/partycje.html">Partycje</a>
+                            <a href="../Klasa-II/uruchamianie-systemu.html">Uruchamianie systemu</a>
+                            <a href="../Klasa-II/zarzadzanie-windows.html">Zarządzanie Windows</a>
+                            <a href="../Klasa-II/optymalizacja-i-diagnozowanie.html">Optymalizacja i diagnozowanie</a>
+                            <a href="../Klasa-II/odzyskiwanie-danych.html">Odzyskiwanie danych</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa III</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-III/informacje.html">Informacje</a>
+                            <a href="../Klasa-III/AdSO.html">AdSO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../zdalne.html">Zdalne</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Elementy Sieci</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Elementy-Sieci/informacje.html" class="active">Informacje</a>
+                            <a href="../Elementy-Sieci/protokoly.html">Protokoły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Linux</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Linux/informacje.html">Informacje</a>
+                            <a href="../Linux/maszyna-wirtualna.html">Maszyna wirtualna</a>
+                            <a href="../Linux/polecenia-linux.html">Polecenia Linux</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../wymagania.html">Wymagania</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Inne</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Inne/IPv6.html">IPV6</a>
+                            <a href="../Inne/porownanie-windows-linux.html">Porównanie win vs linux</a>
+                            <a href="../Inne/referaty.html">Referaty</a>
+                            <a href="https://learningapps.org/1204391" target="_blank">Symbole</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="countdown_div">
+                        <li id="countdown">
+                          <p id="countdowntitle">Dni do wakacji:</p>
+                          <p id="demo"></p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>Elementy Sieci</h1>
+            </div>
+            <p>
+                <br>
+                Polecenia sieciowe - windows
+                <div class="table_1_div">
+                    <iframe class="table_1" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSB6JuVk3P-29TIR1b5T2uZxatw97EyNAbPfDe3t1SLSiZNHuVKs5LGMu5l_0_6aRL9lbRW4cnkoZ55/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" frameborder="0"></iframe>
+                </div>
+            </p>
+            <p>
+                <br>
+                <a href="https://www.zeit.de/gesellschaft/2020-10/yuval-noah-harari-interviewpodcast-alles-gesagt" target="_blank">Pojęcia - harari</a>
+                <div class="table_2_div">
+                    <iframe class="table_2" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSVnEfIhvbbMFAqjIZeRd3eIBvoAvp25ScB-tr2_IAhIwi7AsjZUj7eR-6eY9F60Az7lP_yJOYejCfa/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" frameborder="0"></iframe>
+                </div>
+            </p>
+            <p>
+                <br>
+                Maszyna wirtualna - <a href="https://www.komputerswiat.pl/recenzje/programy/test-wirtualnych-maszyn/63xqfp3" target="_blank">wprowadzenie</a> <br>
+                Maszyna wirtualna - <a href="https://pl.wikipedia.org/wiki/Maszyna_wirtualna" target="_blank">definicje</a> <br>
+                Maszyna wirtualna - <a href="http://www.virtual-it.pl/artykuly/1929-wirtualny-system-jak-zaczac-podstawy-pracy-z-virtualbox.html?limitstart=0" target="_blank">charakterystyka</a> <br>
+                Maszyna wirtualna - <a href="https://piestrzynski.pl/maszyna-wirtualna-instalacja/" target="_blank">instalacja</a> <br>
+                Konfigurowanie karty sieciowej - <a href="http://www.cprnet.pl/index.php/pomoc-techniczna/konfiguracja" target="_blank">link</a> <br>
+                <br>
+                Tworzenie oraz zarządzanie użytkownikami w <a href="https://soisk.pl/tworzenie-oraz-zarzadzanie-uzytkownikami-w-ad/" target="_blank">Active Directory</a> <br>
+                <br>
+                Pobieranie plików poprzez FTP - <a href="ftp://ftp.helion.pl/" target="_blank">helion</a> <br>
+                <br>
+                edukacyjny serwer Linux: <a href="ftp://ftp.icm.edu.pl/" target="_blank">przykłady</a> <br>
+                ACL - uprawnienia w środowisku Linux i Windows <a href="http://wazniak.mimuw.edu.pl/images/a/ae/Bsi_01_lab.pdf" target="_blank">listy kontroli pdf</a> <br>
+                <br>
+                ADSO - <a href="https://epodreczniki-zawodowe.blogspot.com/p/kontakt.html" target="_blank">podręcznik</a> <br>
+                <a href="https://pl.wikipedia.org/wiki/Port_protokołu" target="_blank">Porty i protokoły</a> <br>
+                <br>
+                Protokoły służące programom komputerowym do porozumiewania się między sobą poprzez <a href="https://pl.wikipedia.org/wiki/Internet" target="_blank">Internet</a> są określone przez <a href="https://pl.wikipedia.org/wiki/Internet_Engineering_Task_Force" target="_blank">IETF</a>. <br>
+                W dokumentach zwanych <a href="https://pl.wikipedia.org/wiki/Request_for_Comments" target="_blank">RFC</a>. <br>
+                <br>
+                Przesyłanie danych komputerowych to niezwykle trudny proces, dlatego rozdzielono go na kilka "etapów", warstw. Warstwy oznaczają w istocie poszczególne funkcje spełniane przez sieć. Najbardziej powszechny sposób organizacji warstw komunikacji sieciowej to <a href="https://pl.wikipedia.org/wiki/Model_OSI" target="_blank">Model OSI.</a> <br>
+                <br>
+                Poniżej wyszczególniono niektóre, popularne protokoły komunikacyjne wraz z numerem <a href="https://pl.wikipedia.org/wiki/Port_protokołu" target="_blank">portu</a>: <br>
+                - <a href="https://pl.wikipedia.org/wiki/Domain_Name_System" target="_blank">DNS</a> – 53 <br>
+                - <a href="https://pl.wikipedia.org/wiki/Protokół_transferu_plików" target="_blank">FTP</a> – 21 <br>
+                - <a href="https://pl.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank">HTTP</a> – 80 (<a href="https://pl.wikipedia.org/wiki/Pośrednik_HTTP" target="_blank">HTTP Proxy</a> używa zwykle portu 8080) <br>
+                - <a href="https://pl.wikipedia.org/wiki/HTTPS" target="_blank">HTTPS</a> – 443 (HTTP na <a href="https://pl.wikipedia.org/wiki/Transport_Layer_Security" target="_blank">TLS</a>) <br>
+                - <a href="https://pl.wikipedia.org/wiki/Internet_Relay_Chat" target="_blank">IRC</a> – 6667 <br>
+                - <a href="https://pl.wikipedia.org/wiki/Network_News_Transfer_Protocol" target="_blank">NNTP</a> – 119 <br>
+                - <a href="https://pl.wikipedia.org/wiki/POP3" target="_blank">POP3</a> – 110 <br>
+                - <a href="https://pl.wikipedia.org/wiki/SPOP3" target="_blank">SPOP3</a> – 995 (POP3 na TLS) <br>
+                - <a href="https://pl.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol" target="_blank">SMTP</a> – 25 <br>
+                - <a href="https://pl.wikipedia.org/wiki/Secure_Shell" target="_blank">SSH</a> – 22 <br>
+                - <a href="https://pl.wikipedia.org/wiki/Telnet" target="_blank">Telnet</a> – 23 <br>
+                - <a href="https://pl.wikipedia.org/wiki/Internet_Message_Access_Protocol" target="_blank">IMAP</a> - 143 <br>
+                <br>
+                Przy użyciu protokołu TCP/IP następuje połączenie dwóch komputerów. Dwa komputery uzgadniają numer portu od 1 do 65535 oraz protokół. Przy nawiązaniu połączenia komputer inicjujący podaje adres IP komputera docelowego oraz z góry ustalony numer portu. Komputer docelowy nasłuchuje na ustalonym z góry numerze portu aż jakiś komputer – dowolny – przyśle do niego wiadomość. Komputer odbierający może sprawdzić adres komputera źródłowego oraz informacje zawarte w przesłanej wiadomości i na tej podstawie zdecydować, czy zaakceptować połączenie. Najczęściej wykorzystywanymi protokołami do komunikacji między portami są TCP i UDP. <br>
+                <br>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1XaXet9kLGjTzopW046PBGtymyK9EW4VY/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1r8AQIX6YSAfR3Fai-zDMZsu1zfSkbYTT/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1Ac6t6gZ5w5htVH3SLtCj65Bj-_Gfu_Vo/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1zBugttkH-ToKg1DqDlHNeUfKgA-M4eL6/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1gF_vKFQS6S99eSSXY3B0uiN4k3-ltAD8/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1YVKisst-XyWer1b-B1xhDJdLtI93Kol5/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1cPboadO4r1ONI1fQ7iljkQy2Gv2Swkqw/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1lhb4yn4pDF-vC-oby-BYo_e-u4hYDqE7/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1Nhu9umtb61yN8RBl6zRzfl1OGmOu6Z_o/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/18D1fLJ9my2p8HkY31OjSU_4omG9YVghD/preview" frameborder="0"></iframe>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Anna Śmigielska 2020&copy; utwór dostępny na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" target="_blank">Creative Commons</a></p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/countdown.js"></script>
+</body>
+</html>

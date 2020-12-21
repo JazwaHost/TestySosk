@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl-PL" color-mode="light">
+<head>
+    <title>Klasa I - Informacje</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="TestySosk - Klasa I" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/Information.css" />
+    <link rel="stylesheet" href="../CSS/Elementy Sieci/protocolos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <a href="../index.html">
+                    <img class="logo" src="../img/icon.png">
+                </a>
+                <div class="togglescheme">
+                    <button class="color-mode__btn light--hidden">
+                        <img src="../img/sun.svg"/>
+                    </button>
+                    <button class="color-mode__btn dark--hidden">
+                        <img src="../img/moon.svg"/>
+                    </button>
+                </div>
+                <div class="navtogglediv">
+                    <div class="navtoggle" onclick="openNav(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <div class="links" id="links">
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa I</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-I/informacje.html">Informacje</a>
+                            <a href="../Klasa-I/historia.html">Historia</a>
+                            <a href="../Klasa-I/prawa-autorskie.html">Prawa autorskie</a>
+                            <a href="../Klasa-I/so-charakterystyka.html">SO Charakterystyka</a>
+                            <a href="../Klasa-I/pliki-bat.html">Pliki BAT</a>
+                            <a href="../Klasa-I/uprawnienia-ntfs.html">Uprawnienia NTFS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa II</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-II/informacje.html">Informacje</a>
+                            <a href="../Klasa-II/peryferyjne.html">Peryferyjne</a>
+                            <a href="../Klasa-II/partycje.html">Partycje</a>
+                            <a href="../Klasa-II/uruchamianie-systemu.html">Uruchamianie systemu</a>
+                            <a href="../Klasa-II/zarzadzanie-windows.html">Zarządzanie Windows</a>
+                            <a href="../Klasa-II/optymalizacja-i-diagnozowanie.html">Optymalizacja i diagnozowanie</a>
+                            <a href="../Klasa-II/odzyskiwanie-danych.html">Odzyskiwanie danych</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa III</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-III/informacje.html">Informacje</a>
+                            <a href="../Klasa-III/AdSO.html">AdSO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../zdalne.html">Zdalne</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Elementy Sieci</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Elementy-Sieci/informacje.html">Informacje</a>
+                            <a href="../Elementy-Sieci/protokoly.html" class="active">Protokoły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Linux</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Linux/informacje.html">Informacje</a>
+                            <a href="../Linux/maszyna-wirtualna.html">Maszyna wirtualna</a>
+                            <a href="../Linux/polecenia-linux.html">Polecenia Linux</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../wymagania.html">Wymagania</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Inne</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Inne/IPv6.html">IPV6</a>
+                            <a href="../Inne/porownanie-windows-linux.html">Porównanie win vs linux</a>
+                            <a href="../Inne/referaty.html">Referaty</a>
+                            <a href="https://learningapps.org/1204391" target="_blank">Symbole</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="countdown_div">
+                        <li id="countdown">
+                          <p id="countdowntitle">Dni do wakacji:</p>
+                          <p id="demo"></p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>Protokoły</h1>
+            </div>
+            <p>
+                <b>Protokół komunikacyjny –</b> zbiór ścisłych reguł i kroków postępowania, które są automatycznie wykonywane przez urządzenia komunikacyjne w celu nawiązania łączności i wymiany <a href="https://pl.wikipedia.org/wiki/Dane" target="_blank">danych</a>. <br>
+                <b>Protokoły internetowe -</b> protokoły służące programom komputerowym do porozumiewania się między sobą poprzez <a href="https://pl.wikipedia.org/wiki/Internet" target="_blank">Internet</a> są określone przez <a href="https://pl.wikipedia.org/wiki/Internet_Engineering_Task_Force" target="_blank">IETF</a> w dokumentach zwanych <a href="https://pl.wikipedia.org/wiki/Request_for_Comments" target="_blank">RFC</a>. <br>
+                <br>
+                Przesyłanie danych komputerowych to niezwykle trudny proces, dlatego rozdzielono go na kilka "etapów", warstw. Warstwy oznaczają w istocie poszczególne funkcje spełniane przez sieć. Najbardziej powszechny sposób organizacji warstw komunikacji sieciowej to <a href="https://pl.wikipedia.org/wiki/Model_OSI" target="_blank">Model OSI</a>. <br>
+                <br>
+                Przy użyciu protokołu TCP/IP następuje połączenie dwóch komputerów. <br>
+                Dwa komputery uzgadniają numer portu od 1 do 65535 oraz protokół. <br>
+                Poniżej wyszczególniono niektóre protokoły komunikacyjne wraz z numerem <a href="https://pl.wikipedia.org/wiki/Port_protokołu" target="_blank">portu</a>: <br>
+                <div class="table_1_div">
+                    <iframe class="table_1" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSWM8hWbSUqkfBpXfk5P0ErBTyul0DtL5KhiUxzxAjiAjsygGv6shfneurGuqTQ5HqLlJNqXGVhQa_-/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" frameborder="0"></iframe>
+                </div>
+            </p>
+            <p>
+                <br>
+                <b>Do śledzenia aktywnych portów służą narzędzia:</b> <br>
+                - resmon /zakładka sieć/ <br>
+                - menedżer zadań, <br>
+                - polecenie Netstat, <br>
+                - polecenie Tasklist <br>
+                <br>
+                Aby uruchomić <b>usługi sieciowe</b> na komputerze włączamy usługi IIS /Internetowe usługi informacyjne w funkcjach systemu. <br>
+                <br>
+                Wpisz do wyszukiwarki Funkcje systemu i uruchom je. <br>
+                Wyszukaj w wtświetlonym drzewie Internetowe usługi informacyjne, rozwiń je i sprawdź zawartość. <br>
+                Zwróć uwagę na serwer FTP i usługi WWW. <br>
+                Jeśli Twój komputer ma pełnić funkcję serwera FTP i WWW trzeba zaznaczyć je w widocznych miejscach. <br>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1nI3hOuiz46ZlrkiCOD924Ck_b6H-EguV/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1jx1r-u764z5UCr2rH7EYoyhJ3f6Ewa50/preview" frameborder="0"></iframe>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Anna Śmigielska 2020&copy; utwór dostępny na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" target="_blank">Creative Commons</a></p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/countdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl-PL" color-mode="light">
+<head>
+    <title>Klasa I - Informacje</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="TestySosk - Klasa I" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/Information.css" />
+    <link rel="stylesheet" href="../CSS/KlasaII/Information.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/bat.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <a href="../index.html">
+                    <img class="logo" src="../img/icon.png">
+                </a>
+                <div class="togglescheme">
+                    <button class="color-mode__btn light--hidden">
+                        <img src="../img/sun.svg"/>
+                    </button>
+                    <button class="color-mode__btn dark--hidden">
+                        <img src="../img/moon.svg"/>
+                    </button>
+                </div>
+                <div class="navtogglediv">
+                    <div class="navtoggle" onclick="openNav(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <div class="links" id="links">
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa I</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-I/informacje.html">Informacje</a>
+                            <a href="../Klasa-I/historia.html">Historia</a>
+                            <a href="../Klasa-I/prawa-autorskie.html">Prawa autorskie</a>
+                            <a href="../Klasa-I/so-charakterystyka.html">SO Charakterystyka</a>
+                            <a href="../Klasa-I/pliki-bat.html">Pliki BAT</a>
+                            <a href="../Klasa-I/uprawnienia-ntfs.html">Uprawnienia NTFS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa II</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-II/informacje.html">Informacje</a>
+                            <a href="../Klasa-II/peryferyjne.html">Peryferyjne</a>
+                            <a href="../Klasa-II/partycje.html">Partycje</a>
+                            <a href="../Klasa-II/uruchamianie-systemu.html">Uruchamianie systemu</a>
+                            <a href="../Klasa-II/zarzadzanie-windows.html" class="active">Zarządzanie Windows</a>
+                            <a href="../Klasa-II/optymalizacja-i-diagnozowanie.html">Optymalizacja i diagnozowanie</a>
+                            <a href="../Klasa-II/odzyskiwanie-danych.html">Odzyskiwanie danych</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa III</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-III/informacje.html">Informacje</a>
+                            <a href="../Klasa-III/AdSO.html ">AdSO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../zdalne.html">Zdalne</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Elementy Sieci</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Elementy-Sieci/informacje.html">Informacje</a>
+                            <a href="../Elementy-Sieci/protokoly.html">Protokoły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Linux</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Linux/informacje.html">Informacje</a>
+                            <a href="../Linux/maszyna-wirtualna.html">Maszyna wirtualna</a>
+                            <a href="../Linux/polecenia-linux.html">Polecenia Linux</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../wymagania.html">Wymagania</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Inne</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Inne/IPv6.html">IPV6</a>
+                            <a href="../Inne/porownanie-windows-linux.html">Porównanie win vs linux</a>
+                            <a href="../Inne/referaty.html">Referaty</a>
+                            <a href="https://learningapps.org/1204391" target="_blank">Symbole</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="countdown_div">
+                        <li id="countdown">
+                          <p id="countdowntitle">Dni do wakacji:</p>
+                          <p id="demo"></p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>Zarządzanie Windows</h1>
+            </div>
+            <p>
+                <b>Wybrane polecenia narzędzi administracyjnych:</b> <br>
+                A - compmgmt.msc -> Zarządzanie komputerem (Computer Management) - 1,6 <br>
+                B - devmgmt.msc -> Menedżer urzadzeń (Device Manager) - 2, 18 <br>
+                C - eventvwr.msc -> Podgląd zdarzeń (Event Viewer) - 3, 11 <br>
+                D - fsmgmt.msc -> Monitor sieci (Shared Folders) - 4, 17 <br>
+                E - gpedit.msc -> Zasady grupy (Group Policy Object) -10,19 <br>
+                F - perfmon.msc -> Wydajność (Performance) - 5, 14,15 <br>
+                G - secpol.msc -> Ustawienia zabezpieczeń lokalnych (Local Computer Policy) - 8,9  <br>
+                H - services.msc -> Usługi (Services) - 7, 16  <br>
+                I - diskmgmt.msc -> Zarządzanie dyskami (Disk Management) - 12, 13 <br>
+                J - azman.msc  (Menedżer autoryzacji) Kontrola dostępu oparta na rolach pozwala przypisywać użytkowników do ról, śledzić jakie uprawnienia zostały przypisane do każdej z ról. <br>
+                K - dompol.msc (Domyślne ustawienia zabezpieczeń domeny) pozwala na modyfikacje ustawieniami zabezpieczeń domeny. <br>
+                L - lusrmgr.msc ( Użytkownicy i grupy lokalne) tworzenie nowych kont  użytkowników i grup lub edytowania już istniejących. <br>
+                <br>
+                <b>Konfigurowanie urządzeń - </b><a href="http://www.cprnet.pl/index.php/pomoc-techniczna/konfiguracja" target="_blank"> karta sieciowa</a> <br>
+                <a href="https://spece.it/narzedzia-administracyjne-windows/" target="_blank">Opis przystawek</a> <br>
+                <br>
+                <b>Tworzenie konsoli i dodawanie przystawek administratora</b> <br>
+                Można połączyć narzędzia w tzw. konsolę administracyjną. Pozwala to na zgrupowanie ważnych narzędzi administracyjnych, w tym zarządzanie komputerem, dyskami, użytkownikami i grupami itd. <br>
+                <br>
+                Aby otworzyć nową, czystą konsolę MMC, należy z Menu Start wybrać pozycję Uruchom, a następnie wpisać mmc. <br>
+                Na ekranie ukaże się czysta konsola i będzie można zacząć jej budowanie. <br>
+                NTFS umożliwia szczegółowy przydział uprawnień - ACL.<a href="http://wazniak.mimuw.edu.pl/images/a/ae/Bsi_01_lab.pdf" target="_blank"> uprawnienia ACL</a> <br>
+                dodatki: <br>
+                Do zmiany uprawnień czyli list kontroli dostępu ACL plików z linii poleceń czyli w konsoli służy polecenie cacls lub- w nowszych wersjach systemu: Icacls <br>
+                <b>taskmgr.exe - </b>menedżer zadań Windows <br>
+                <b>net user - </b>zarządzanie użytkownikami <br>
+                <div class="presentation_div">
+                    <iframe class="presentation" src="https://drive.google.com/file/d/1URDhPiS6RyGlzh5lVAKWOMtUhkBdWO2-/preview" frameborder="0"></iframe>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Anna Śmigielska 2020&copy; utwór dostępny na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" target="_blank">Creative Commons</a></p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/countdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl-PL" color-mode="light">
+<head>
+    <title>Klasa I - Informacje</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="TestySosk - Klasa I" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/Information.css" />
+    <link rel="stylesheet" href="../CSS/Inne/ipv6.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <a href="../index.html">
+                    <img class="logo" src="../img/icon.png">
+                </a>
+                <div class="togglescheme">
+                    <button class="color-mode__btn light--hidden">
+                        <img src="../img/sun.svg"/>
+                    </button>
+                    <button class="color-mode__btn dark--hidden">
+                        <img src="../img/moon.svg"/>
+                    </button>
+                </div>
+                <div class="navtogglediv">
+                    <div class="navtoggle" onclick="openNav(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <div class="links" id="links">
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa I</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-I/informacje.html">Informacje</a>
+                            <a href="../Klasa-I/historia.html">Historia</a>
+                            <a href="../Klasa-I/prawa-autorskie.html">Prawa autorskie</a>
+                            <a href="../Klasa-I/so-charakterystyka.html">SO Charakterystyka</a>
+                            <a href="../Klasa-I/pliki-bat.html">Pliki BAT</a>
+                            <a href="../Klasa-I/uprawnienia-ntfs.html">Uprawnienia NTFS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa II</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-II/informacje.html">Informacje</a>
+                            <a href="../Klasa-II/peryferyjne.html">Peryferyjne</a>
+                            <a href="../Klasa-II/partycje.html">Partycje</a>
+                            <a href="../Klasa-II/uruchamianie-systemu.html">Uruchamianie systemu</a>
+                            <a href="../Klasa-II/zarzadzanie-windows.html">Zarządzanie Windows</a>
+                            <a href="../Klasa-II/optymalizacja-i-diagnozowanie.html">Optymalizacja i diagnozowanie</a>
+                            <a href="../Klasa-II/odzyskiwanie-danych.html">Odzyskiwanie danych</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa III</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-III/informacje.html">Informacje</a>
+                            <a href="../Klasa-III/AdSO.html">AdSO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../zdalne.html">Zdalne</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Elementy Sieci</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Elementy-Sieci/informacje.html">Informacje</a>
+                            <a href="../Elementy-Sieci/protokoly.html">Protokoły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Linux</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Linux/informacje.html">Informacje</a>
+                            <a href="../Linux/maszyna-wirtualna.html">Maszyna wirtualna</a>
+                            <a href="../Linux/polecenia-linux.html">Polecenia Linux</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../wymagania.html">Wymagania</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Inne</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Inne/IPv6.html" class="active">IPV6</a>
+                            <a href="../Inne/porownanie-windows-linux.html">Porównanie win vs linux</a>
+                            <a href="../Inne/referaty.html">Referaty</a>
+                            <a href="https://learningapps.org/1204391" target="_blank">Symbole</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="countdown_div">
+                        <li id="countdown">
+                          <p id="countdowntitle">Dni do wakacji:</p>
+                          <p id="demo"></p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>IPV6</h1>
+            </div>
+            <p>
+                <b>Wymagania instalacyjne systemów Windows</b> zalecane <br>
+                <div class="table_1_div">
+                    <iframe class="table_1" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTo2hQ5QLrsN4zr5j2eddogjLOvUychhlI9WrsN6NVBF9vnR65PEqimNa3mwdftBM5_C_19X-yFK8W3/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" frameborder="0"></iframe>
+                </div>
+            </p>
+            <p>
+                <b>Testowanie konfiguracji protokołu IPv6 przy użyciu polecenia ping</b> <br>
+                1. Aby uzyskać konfigurację protokołu IPv6 komputera, otwórz okno wiersza polecenia, a następnie wpisz polecenie netsh interface ipv6 show interface. <br>
+                2. W wierszu polecenia wpisz polecenie ping ::1, aby wysłać pakiety ping na adres sprzężenia zwrotnego.  <br>
+                Jeśli wynik działania polecenia ping jest niepomyślny, sprawdź, czy do interfejsu o nazwie Pseudointerfejs sprzężenia zwrotnego przypisano adres ::1. <br>
+                3. Użyj następującego polecenia, aby wysłać pakiety ping na lokalny dla łącza adres IPv6 komputera: <br>
+                pingAdres%IDstrefy <br>
+                gdzie parametr Adres jest adresem lokalnym dla łącza, a parametr IDstrefy jest indeksem interfejsu, do którego przypisano ten adres lokalny dla łącza. Adres lokalny dla łącza zaczyna się od FE80. <br>
+                Jeśli wynik działania polecenia ping jest niepomyślny, sprawdź poprawność adresu i indeksu interfejsu. <br>
+                4. Użyj następującego polecenia, aby wysłać pakiety ping na lokalny dla łącza adres innego hosta podłączonego do tego samego łącza (które nazywane jest również podsiecią): <br>
+                pingAdres%IDstrefy <br>
+                gdzie parametr Adres jest lokalnym dla łącza adresem innego hosta, a parametr IDstrefy jest indeksem interfejsu, z którego mają zostać wysłane pakiety ping. <br>
+                Jeśli wynik działania polecenia ping jest niepomyślny, zweryfikuj lokalny dla łącza adres hosta i identyfikator zakresu. <br>
+                <br>
+                <b>Aby przetestować łączność IPv6 przy użyciu polecenia ping</b> <br>
+                1. Aby uzyskać konfigurację IPv6 dla komputera, otwórz okno Wiersz polecenia i wpisz polecenie netsh interface ipv6 show interfaceNazwaInterfejsu, gdzieNazwaInterfejsu to nazwa interfejsu na komputerze. Jeśli interfejs nosi na przykład nazwę Połączenie lokalne, należy wpisać:  <br>
+                netsh interface ipv6 show interface "Połączenie lokalne" <br>
+                Jeśli protokół IPv6 nie jest zainstalowany, zobacz sekcję Tematy pokrewne. <br>
+                2. Użyj jednego z następujących poleceń, aby wysłać pakiety ping do innego węzła IPv6:  <br>
+                - Aby wysłać pakiety ping na lokalny dla łącza adres innego węzła podłączonego do tego samego łącza (które nazywane jest również podsiecią):  <br>
+                pingAdres%IDstrefy <br>
+                gdzie parametr Adres jest lokalnym dla łącza adresem innego węzła, a parametr IDstrefy jest zazwyczaj indeksem interfejsu, z którego mają być wysyłane pakiety ping. Indeks interfejsu można uzyskać z danych wyjściowych polecenia netsh interface ipv6 show interface. <br>
+                Jeśli wynik działania polecenia ping jest niepomyślny, sprawdź poprawność lokalnego dla łącza adresu węzła i identyfikatora strefy. <br>
+                - Aby wysłać pakiety ping na lokalny dla witryny adres innego węzła:  <br>
+                pingAdres%IDstrefy <br>
+                gdzie parametr Adres jest lokalnym dla witryny adresem innego węzła, a parametr IDstrefy jest identyfikatorem witryny (identyfikatorem strefy dla witryny) pochodzącym z danych wyjściowych polecenia netsh interface ipv6 show interface level=verbose. Jeśli nie są używane identyfikatory witryn lub jest tylko jedna witryna, fragment polecenia %IDstrefy nie jest wymagany. <br>
+                Jeśli wynik działania polecenia ping jest niepomyślny, sprawdź poprawność lokalnego dla witryny adresu węzła i identyfikatora strefy. <br>
+                - Aby wysłać pakiety ping na adres globalny innego węzła:  <br>
+                pingAdres <br>
+                gdzie parametr Adres jest adresem globalnym innego węzła. <br>
+                Jeśli wynik działania polecenia ping jest niepomyślny, sprawdź poprawność adresu globalnego węzła. <br>
+                - Aby wysłać pakiety ping do innego węzła, używając jego nazwy:  <br>
+                ping -6Nazwa <br>
+                gdzie parametr Nazwa określa nazwę, która może być przetłumaczona na adres IPv6 na podstawie wpisów z lokalnego pliku Hosts lub rekordów zasobów AAAA należących do infrastruktury systemu nazw domen (DNS, Domain Name System). Jeśli do identyfikacji hosta docelowego jest używana nazwa, a nie adres IPv6, konieczne jest dodanie parametru -6, który sprawia, że będą stosowane adresy IPv6. <br>
+                Jeśli wynik działania polecenia ping jest niepomyślny, sprawdź, czy nazwa może być rozpoznana jako adres IPv6. <br>
+                <br>
+                <b>Aby wyświetlić konfigurację interfejsu</b> <br>
+                Otwórz okno wiersza polecenia. <br>
+                W wierszu polecenia wpisz polecenie netsh, a następnie naciśnij klawisz ENTER. <br>
+                Wpisz polecenie interface ipv6, a następnie naciśnij klawisz ENTER. <br>
+                Wpisz show interface [interface=]ciąg_znaków <br>
+                <br>
+                <b>NETSH -</b> wyświetla informacje o połączeniach sieciowych. <br>
+                <br>
+                <b> Przykłady zastosowania polecenia netsh:</b> <br>
+                netsh inteface ipv4>show config <br>
+                netsh inteface ipv4>show interface <br>
+                netsh inteface ipv6>show config <br>
+                netsh => interface => ipv4 => set address "Połączenie lokalne" static 192.168.10.21 255.255.255.0 192.168.10.1 <br>
+                netsh => interface => ipv4 => set address "Local Area Connection" dhcp <br>
+                netsh => interface => ip => show <br>
+                netsh interface ip reset  <br>
+                <br>
+                <b>netsh firewall show config</b> - Wyświetla aktualną konfigurację zapory systemu Windows. <br>
+                <b>netsh firewall reset</b> - Kasuje aktualną konfiguracje zapory wprowadzaną aż od momentu instalacji systemu Windows <br>
+                <br>
+                <a href="http://technet.microsoft.com/pl-pl/library/" target="_blank">http://technet.microsoft.com/pl-pl/library/</a>
+                <br>
+                Microsoft - <a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc736559(v=ws.10)?redirectedfrom=MSDN" target="_blank">diagnostyka-netsh</a> <br>
+                <a href="https://docplayer.pl/1025981-Przyklady-wykorzystania-polecenia-netsh.html" target="_blank">Netsh przykłady</a> <br>
+                <br>
+                <br>
+                <a href="https://drive.google.com/file/d/18YHZlcfJeNDRGKNZ5fGXEyG1BYCmnnXo/view?usp=sharing" target="_blank">2013-2014 E12 - UTK, DUTK, SO.xlsx</a> <br>
+                <a href="https://drive.google.com/file/d/1kIS6OVt0T6o4OsSjU9sKJKVoTlGQnFon/view?usp=sharing" target="_blank">2013-2014 E13 - PSK, PLSK, PMSK, ASO.xlsx</a> <br>
+                <a href="https://drive.google.com/file/d/1SfVmVzc7yFStcqvFqgWEh_6mmHa5kg0b/view?usp=sharing" target="_blank">2013-2014 E14 - WAI, PAI, SBD, ABD.xlsx</a> <br>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1V5LlCDjRNczWwQD74YZk16N-dPL3sYQC/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1YalJoUdNRACS5Pi8fkWkvYp47qeey6g-/preview" frameborder="0"></iframe>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Anna Śmigielska 2020&copy; utwór dostępny na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" target="_blank">Creative Commons</a></p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/countdown.js"></script>
+</body>
+</html>

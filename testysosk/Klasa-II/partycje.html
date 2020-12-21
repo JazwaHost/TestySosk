@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl-PL" color-mode="light">
+<head>
+    <title>Klasa I - Informacje</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="TestySosk - Klasa I" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/Information.css" />
+    <link rel="stylesheet" href="../CSS/KlasaII/partition.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <a href="../index.html">
+                    <img class="logo" src="../img/icon.png">
+                </a>
+                <div class="togglescheme">
+                    <button class="color-mode__btn light--hidden">
+                        <img src="../img/sun.svg"/>
+                    </button>
+                    <button class="color-mode__btn dark--hidden">
+                        <img src="../img/moon.svg"/>
+                    </button>
+                </div>
+                <div class="navtogglediv">
+                    <div class="navtoggle" onclick="openNav(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <div class="links" id="links">
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa I</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-I/informacje.html">Informacje</a>
+                            <a href="../Klasa-I/historia.html">Historia</a>
+                            <a href="../Klasa-I/prawa-autorskie.html">Prawa autorskie</a>
+                            <a href="../Klasa-I/so-charakterystyka.html">SO Charakterystyka</a>
+                            <a href="../Klasa-I/pliki-bat.html">Pliki BAT</a>
+                            <a href="../Klasa-I/uprawnienia-ntfs.html">Uprawnienia NTFS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa II</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-II/informacje.html">Informacje</a>
+                            <a href="../Klasa-II/peryferyjne.html">Peryferyjne</a>
+                            <a href="../Klasa-II/partycje.html" class="active">Partycje</a>
+                            <a href="../Klasa-II/uruchamianie-systemu.html">Uruchamianie systemu</a>
+                            <a href="../Klasa-II/zarzadzanie-windows.html">Zarządzanie Windows</a>
+                            <a href="../Klasa-II/optymalizacja-i-diagnozowanie.html">Optymalizacja i diagnozowanie</a>
+                            <a href="../Klasa-II/odzyskiwanie-danych.html">Odzyskiwanie danych</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa III</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-III/informacje.html">Informacje</a>
+                            <a href="../Klasa-III/AdSO.html">AdSO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../zdalne.html">Zdalne</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Elementy Sieci</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Elementy-Sieci/informacje.html">Informacje</a>
+                            <a href="../Elementy-Sieci/protokoly.html">Protokoły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Linux</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Linux/informacje.html">Informacje</a>
+                            <a href="../Linux/maszyna-wirtualna.html">Maszyna wirtualna</a>
+                            <a href="../Linux/polecenia-linux.html">Polecenia Linux</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../wymagania.html">Wymagania</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Inne</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Inne/IPv6.html">IPV6</a>
+                            <a href="../Inne/porownanie-windows-linux.html">Porównanie win vs linux</a>
+                            <a href="../Inne/referaty.html">Referaty</a>
+                            <a href="https://learningapps.org/1204391" target="_blank">Symbole</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="countdown_div">
+                        <li id="countdown">
+                          <p id="countdowntitle">Dni do wakacji:</p>
+                          <p id="demo"></p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>Partycje</h1>
+            </div>
+            <p>
+                <b>Dysk fizyczny</b> można dzielić na dyski logiczne. <br>
+                <b>Dysk logiczny</b> można formatować i można mu przypisać literę dysku. <br>
+                Pierwszą literą dla dysków twardych jest litera C. Najczęściej na dysku C umieszczony jest system operacyjny Windows - jest to dysk podstawowy (partycja podstawowa) <br>
+                <b>Partycja podstawowa</b> to część dysku fizycznego, na której można przechowywać dane lub system operacyjny. <br>
+                <b>Partycja rozszerzona</b> to rodzaj partycji, który można tworzyć tylko na podstawowych dyskach MBR (ang.) master boot record. <br> 
+                <b>Dysk MBR</b> może zawierać maksymalnie cztery partycje podstawowe albo trzy partycje podstawowe i jedną partycję rozszerzoną z wieloma partycjami logicznymi. <br>
+                <b>Tablica partycji</b> (ang. partition table) – jest przechowywana w <a href="https://pl.wikipedia.org/wiki/Master_Boot_Record" target="_blank">master boot rekordzie</a> pierwszego sektora dysku twardego. Struktura ta zajmuje 64 bajty w której są 4 wpisy (po 16 bajtów każdy) Tabela partycji typu MBR ma poważne ograniczenia. Nie pozwala bowiem na zapisanie informacji o partycjach zajmujących więcej jak 2 TB. <br>
+                <br>
+            </p>
+                <h2>Tablica partycji GPT (GUID Partition Table)</h2> <br>
+            <p>
+                Wraz z pojawieniem się dysków twardych o dużych pojemnościach opracowano nowy standard zawierający dwupoziomową tabelę partycji, w którym pierwszy sektor tylko opisuje tabelę partycji, a sama tabela mieści się w sektorze drugim. Tablica partycji umieszczona w drugim sektorze zawiera do 128 wpisów z informacjami o utworzonych partycjach. <br>
+                Wyświetlenie lub zmiana stylu: - <b>diskpart, list disk</b>, convert lub <b>diskmgmt.msc</b> i właściwości na dysku <br>
+                <b>Klaster dyskowy</b> (ang. disk cluster) - w systemie plików podstawowa jednostka przechowywania danych, składająca się z jednego lub kilku sektorów nośnika danych. Obszar jednego klastra można wypełnić danymi należącymi tylko do jednego pliku. <br>
+                W najczęściej używanym aktualnie systemie plików NTFS przyjmuje się domyślną wielkość klastra 4 kB, minimalna wynosi 512 bajtów, a maksymalna 64 kB. <br>
+                W systemie FAT i FAT32, gdy sektory dyskowe mają rozmiar większy od 512 bajtów, można tworzyć klastry nawet 128 kB i 256 kB. <br>
+                <br>
+                System Linux może być zainstalowany na dowolnej partycji, zarówno podstawowej jak i logicznej. W systemach z rodziny Unix partycje znajdują się w folderach /dev/hdxy (dyski ATA) lub /dev/sdxy (dyski SATA, SCSI, zewnętrzne dyski USB i inne). <br>
+                <br>
+            </p>
+                <h2>Przydatne linki:</h2>
+            <p>
+                <a href="https://pl.wikipedia.org/wiki/Partycja#Inne_implementacje_partycjonowania" target="_blank">- Partycjonowanie Wikipedia</a> <br>
+                <a href="https://www.benchmark.pl/testy_i_recenzje/partycje-mbr-gpt-windows-8.html" target="_blank">- Partycje Windows 8 Benchmark</a> <br>
+                <a href="https://support.microsoft.com/en-us/windows/create-and-format-a-hard-disk-partition-bbb8e185-1bda-ecd1-3465-c9728f7d7d2e#create-format-hard-disk-partition=windows-7" target="_blank">- Partycjonowanie Windows 7</a> <br>
+                <a href="https://www.benchmark.pl/testy_i_recenzje/top10-najlepszych-darmowych-programow-do-partycjonowania.html" target="_blank">- Programy do partycjonowania</a> <br>
+                <a href="https://www.purepc.pl/pamieci_masowe/poradnik_raid_teoria_budowa_naprawa_i_testy_raid_0_1_5_10" target="_blank">- RAID poradnik</a> <br>
+                <a href="https://poradnik.kz1.pl/index.php?page=macierzeraid" target="_blank">- RAID macierze</a> <br>
+                <a href="https://www.dobreprogramy.pl/HD-Tune,Program,Windows,12177.html" target="_blank">- Sprawdzanie wydajności dysku - HD Tune</a> <br>
+                <a href="https://www.dobreprogramy.pl/ATTO-Disk-Benchmark,Program,Windows,27685.html" target="_blank">- Narzędzie do testowania wydajności urządzeń magazynujących dane - ATTO Disc</a> <br>
+                <a href="https://support.microsoft.com/pl-pl/windows?ui=pl-PL&rs=pl-PL&ad=PL" target="_blank">- Instalacja Windows</a> <br>
+                <a href="https://support.microsoft.com/en-us/windows/optimize-windows-for-better-performance-6c70719b-d7b7-2ab3-d744-c88113c7e83a#1TC=windows-7" target="_blank">- Stronicowanie pamięci Windows 7</a> <br>
+                <br>
+                <b>Pomocnicze</b> <br>
+                Pamięć wirtualna łączy pamięć RAM komputera z tymczasowym miejscem na dysku twardym. Kiedy jest za mało pamięci RAM, pamięć wirtualna umożliwia przeniesienie danych z pamięci RAM do miejsca nazywanego plikiem stronicowania. Przenoszenie danych do i z pliku stronicowania zwalnia pamięć RAM, umożliwiając komputerowi sprawne działanie.W systemie Windows początkowy minimalny rozmiar pliku stronicowania jest ustawiany na wartość równą wielkości pamięci RAM zainstalowanej w komputerze, a jego maksymalny rozmiar jest trzy razy większy niż wielkość pamięci RAM zainstalowanej w komputerze. <br>
+                <div class="table_1_div">
+                    <iframe class="table_1" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2NVSVREDYsnUEJVcv7LPbyx1FJI0g9D-jzeucKCg_2_8y9WuaYTsm1EBRUQ5RkMjzULTH9h_shHao/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div">
+                    <iframe class="presentation" src="https://drive.google.com/file/d/1Su00Na2L2EJZqx00LQbR8Bwn4oK5kVT5/preview" frameborder="0"></iframe>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Anna Śmigielska 2020&copy; utwór dostępny na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" target="_blank">Creative Commons</a></p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/countdown.js"></script>
+</body>
+</html>

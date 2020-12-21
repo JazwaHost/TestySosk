@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pl-PL" color-mode="light">
+<head>
+    <title>Klasa I - Informacje</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="TestySosk - Klasa I" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/Information.css" />
+    <link rel="stylesheet" href="../CSS/KlasaII/Information.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/bat.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <a href="../index.html">
+                    <img class="logo" src="../img/icon.png">
+                </a>
+                <div class="togglescheme">
+                    <button class="color-mode__btn light--hidden">
+                        <img src="../img/sun.svg"/>
+                    </button>
+                    <button class="color-mode__btn dark--hidden">
+                        <img src="../img/moon.svg"/>
+                    </button>
+                </div>
+                <div class="navtogglediv">
+                    <div class="navtoggle" onclick="openNav(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <div class="links" id="links">
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa I</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-I/informacje.html">Informacje</a>
+                            <a href="../Klasa-I/historia.html">Historia</a>
+                            <a href="../Klasa-I/prawa-autorskie.html">Prawa autorskie</a>
+                            <a href="../Klasa-I/so-charakterystyka.html">SO Charakterystyka</a>
+                            <a href="../Klasa-I/pliki-bat.html">Pliki BAT</a>
+                            <a href="../Klasa-I/uprawnienia-ntfs.html">Uprawnienia NTFS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa II</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-II/informacje.html">Informacje</a>
+                            <a href="../Klasa-II/peryferyjne.html">Peryferyjne</a>
+                            <a href="../Klasa-II/partycje.html">Partycje</a>
+                            <a href="../Klasa-II/uruchamianie-systemu.html">Uruchamianie systemu</a>
+                            <a href="../Klasa-II/zarzadzanie-windows.html">Zarządzanie Windows</a>
+                            <a href="../Klasa-II/optymalizacja-i-diagnozowanie.html">Optymalizacja i diagnozowanie</a>
+                            <a href="../Klasa-II/odzyskiwanie-danych.html" class="active">Odzyskiwanie danych</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa III</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-III/informacje.html">Informacje</a>
+                            <a href="../Klasa-III/AdSO.html ">AdSO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../zdalne.html">Zdalne</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Elementy Sieci</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Elementy-Sieci/informacje.html">Informacje</a>
+                            <a href="../Elementy-Sieci/protokoly.html">Protokoły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Linux</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Linux/informacje.html">Informacje</a>
+                            <a href="../Linux/maszyna-wirtualna.html">Maszyna wirtualna</a>
+                            <a href="../Linux/polecenia-linux.html">Polecenia Linux</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../wymagania.html">Wymagania</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Inne</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Inne/IPv6.html">IPV6</a>
+                            <a href="../Inne/porownanie-windows-linux.html">Porównanie win vs linux</a>
+                            <a href="../Inne/referaty.html">Referaty</a>
+                            <a href="https://learningapps.org/1204391" target="_blank">Symbole</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="countdown_div">
+                        <li id="countdown">
+                          <p id="countdowntitle">Dni do wakacji:</p>
+                          <p id="demo"></p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>Odzyskiwanie danych</h1>
+            </div>
+            <p>
+                <b>Przywracanie systemu Windows 10 -</b> <a href="https://support.microsoft.com/pl-pl/windows/opcje-odzyskiwania-w-systemie-windows-10-31ce2444-7de3-818c-d626-e3b5a3024da5" target="_blank">opcje odzyskiwania support Microsoft</a> <br>
+                <b>Przywracanie systemu Windows 7 -</b> Otwórz Centrum kopii zapasowych i przywracania, klikając przycisk StartObraz przycisku Start, polecenie Panel sterowania i pozycję System i konserwacja, a następnie pozycję Tworzenie kopii zapasowych i przywracanie. W Windows 7 udostępniono funkcję przywracania ostatniej wersji pliku lub folderu - dostępna jest w menu Właściwości pod zakładką Poprzednie wersje. <br>
+                <br>
+                <b>Trzy typy kopii zapasowych:</b> <br>
+                <b>- Normalna –</b> kopiuje wszystkie wybrane pliki i czyści z nich atrybut archiwalności, aby następne kopie zapisywały tylko te pliki, które zmieniły się od ostatniej archiwizacji. Zazwyczaj wykonywana jest wtedy, gdy zestaw kopii tworzony jest po raz pierwszy. <br>
+                <b>- Przyrostowa –</b> kopiuje tylko te pliki, które zmieniły się od czasu ostatniej archiwizacji przyrostowej lub normalnej. Czyli te pliki, które kiedyś były zarchiwizowane, ale zmieniła się ich zawartość i należy je skopiować jeszcze raz. Po kopiowaniu czyszczony jest atrybut archiwizacji. <br>
+                <b>- Różnicowa –</b> kopiuje tylko te pliki, które zmieniły się od czasu ostatniej kopii Normalnej albo Przyrostowej. Jednak nie zmienia plikom atrybutów, archiwalności. <br>
+                <br>
+                <b>Przywracanie plików w Windows 8</b> <br>
+                W Windows 8 zmieniła się filozofia tworzenia kopii zapasowych. Nie można już tworzyć pełnego obrazu systemu ani wykonać kopii zapasowej całej zawartości dysku twardego. Teraz możliwe jest tworzenie jedynie kopii zapasowych plików zgromadzonych w bibliotekach użytkownika, plików z pulpitu, kontaktów i folderu ulubione z przeglądarki. W tym celu należy posłużyć się funkcją Historia plików, która ma na celu ochronę jedynie plików użytkownika, których nie da się odtworzyć.Aby rozpocząć korzystanie z Historii plików należy ją włączyć z Panelu sterowania. Panel sterowania uruchamiamy z ekranu startowego Metro Windows 8 poprze opcję Aplikacje, poprzez wyszukiwanie albo Ustawienia. Uruchomiony zostanie wówczas klasyczny panel sterowania, z którego należy wybrać opcję System i zabezpieczenia. Po jego kliknięciu, w środku listy znajduje się opcja Historia plików. <a href="https://www.benchmark.pl/testy_i_recenzje/backup-danych-windows-8.html" target="_blank">opis</a>
+                <br>
+                <b>Konsola odzyskiwania systemu Windows XP</b> <br>
+                Pomaga odzyskać system, jeśli komputer z systemem Windows nie uruchamia się poprawnie lub w ogóle się nie uruchamia.
+                Jeśli tryb awaryjny i inne opcje startowe nie działają, można rozważyć użycie Konsoli odzyskiwania.
+                Metoda ta jest zalecana tylko dla użytkowników zaawansowanych, którzy wiedzą jak używać podstawowych poleceń do identyfikowania i lokalizowania sterowników i plików powodujących problemy.
+                Ponadto, aby korzystać z Konsoli odzyskiwania, trzeba być administratorem. <br>
+                <br>
+                <b>Instalowanie Konsoli odzyskiwania</b> <br>
+                Konsolę odzyskiwania można zainstalować na komputerze, aby była dostępna na wypadek, gdyby nie można było ponownie uruchomić systemu Windows. <br>
+                <br>
+                <b>Aby zainstalować Konsolę odzyskiwania, wykonaj następujące kroki:</b> <br>
+                1 - Włóż dysk CD z systemem Windows XP do stacji CD-ROM. <br>
+                2 - Kliknij przycisk Start, a następnie kliknij polecenie Uruchom. <br>
+                3 - W polu Otwórz wpisz polecenie d:\i386\winnt32.exe /cmdcons, gdzie d jest literą dysku stacji CD-ROM. <br>
+                4 - Wyświetlone zostaje okno dialogowe Instalatora Windows z opcją Konsola odzyskiwania. System monituje o potwierdzenie instalacji. Kliknij przycisk Tak, aby rozpocząć procedurę instalacji. <br>
+                5 - Ponownie uruchom komputer. Przy następnym uruchomieniu komputera w menu rozruchowym wyświetlana będzie opcja „Konsola odzyskiwania Microsoft Windows”. <br>
+                <br>
+                <b>MHDD –</b> <a href="https://hddguru.com/software/2005.10.02-MHDD/" target="_blank">darmowy program do diagnozowania i naprawy dysków twardych.</a> <br>
+                <b>HDPARM -</b> <a href="http://manpages.ubuntu.com/manpages/bionic/pl/man8/hdparm.8.html" target="_blank">kontrola napędów  w systemie Linux</a> <br>
+                <br>
+                <b>Przywracanie rejestru</b> <br>
+                Używamy polecenia regedit aby wyeksportować pliki rejestru do wybranego pliku - rozszerzenie reg. Z tego pliku można zaimportować prawidłowy rejestr systemowy. <br>
+                <br>
+                <b>Partycja Recovery</b> <br>
+                Używana w laptopach do przywracania systemu - <a href="https://www.purepc.pl/oprogramowanie/poradnik_jak_wykonac_obraz_dysku_twardego_i_systemu_windows?page=0,7" target="_blank">Poradnik - obraz dysku - programy narzędziowe</a> <br>
+                <br>
+                <b>Odzyskiwanie systemu Windows 7 z wykorzystaniem Recovery Disc </b> <br>
+                - Aby utworzyć dysk (CD/DVD )musimy uruchomić kreator z uprawnieniami administratorskimi. Najłatwiej  wywołać wiesz poleceń poprzez: Start => Wszystkie programy => Akcesoria => Prawy przycisk myszy na Wierszu poleceń => Uruchom jako administrator. <br>
+                - W oknie wiersza poleceń wpisujemy: <br>
+                - %systemroot%\system32\recdisc.exe, <br>
+                - Uruchamiamy kreatora dysku naprawy Windows 7 <br>
+                - Tak utworzymy bootowalną płytę ze środowiskiem Windows 7 <br>
+                <br>
+                <b>Tworzenie dysku odzyskiwania dla systemu Windows 8-10</b> <br>
+                W okienku  Uruchom wpisz "dysk odzyskiwania" <br>
+                <br>
+                <b>Odzyskiwanie danych użytkownika po usunięciu konta</b> <br>
+                1 - w Windows XP - Document and Settings <br>
+                2 - w Windows 7 - katalog Użytkownicy <br>
+                3 - w Linux - /home/nazwa_konta <br>
+                <div class="presentation_div">
+                    <iframe class="presentation" src="https://drive.google.com/file/d/1C1QlSe_zLD-k8jI-byqigiBXVCDFu58j/preview" frameborder="0"></iframe>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Anna Śmigielska 2020&copy; utwór dostępny na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" target="_blank">Creative Commons</a></p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/countdown.js"></script>
+</body>
+</html>

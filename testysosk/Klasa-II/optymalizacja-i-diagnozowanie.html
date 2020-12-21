@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl-PL" color-mode="light">
+<head>
+    <title>Klasa I - Informacje</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="TestySosk - Klasa I" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/Information.css" />
+    <link rel="stylesheet" href="../CSS/KlasaII/Information.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/bat.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <a href="../index.html">
+                    <img class="logo" src="../img/icon.png">
+                </a>
+                <div class="togglescheme">
+                    <button class="color-mode__btn light--hidden">
+                        <img src="../img/sun.svg"/>
+                    </button>
+                    <button class="color-mode__btn dark--hidden">
+                        <img src="../img/moon.svg"/>
+                    </button>
+                </div>
+                <div class="navtogglediv">
+                    <div class="navtoggle" onclick="openNav(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <div class="links" id="links">
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa I</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-I/informacje.html">Informacje</a>
+                            <a href="../Klasa-I/historia.html">Historia</a>
+                            <a href="../Klasa-I/prawa-autorskie.html">Prawa autorskie</a>
+                            <a href="../Klasa-I/so-charakterystyka.html">SO Charakterystyka</a>
+                            <a href="../Klasa-I/pliki-bat.html">Pliki BAT</a>
+                            <a href="../Klasa-I/uprawnienia-ntfs.html">Uprawnienia NTFS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa II</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-II/informacje.html">Informacje</a>
+                            <a href="../Klasa-II/peryferyjne.html">Peryferyjne</a>
+                            <a href="../Klasa-II/partycje.html">Partycje</a>
+                            <a href="../Klasa-II/uruchamianie-systemu.html">Uruchamianie systemu</a>
+                            <a href="../Klasa-II/zarzadzanie-windows.html">Zarządzanie Windows</a>
+                            <a href="../Klasa-II/optymalizacja-i-diagnozowanie.html" class="active">Optymalizacja i diagnozowanie</a>
+                            <a href="../Klasa-II/odzyskiwanie-danych.html">Odzyskiwanie danych</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa III</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-III/informacje.html">Informacje</a>
+                            <a href="../Klasa-III/AdSO.html ">AdSO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../zdalne.html">Zdalne</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Elementy Sieci</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Elementy-Sieci/informacje.html">Informacje</a>
+                            <a href="../Elementy-Sieci/protokoly.html">Protokoły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Linux</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Linux/informacje.html">Informacje</a>
+                            <a href="../Linux/maszyna-wirtualna.html">Maszyna wirtualna</a>
+                            <a href="../Linux/polecenia-linux.html">Polecenia Linux</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../wymagania.html">Wymagania</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Inne</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Inne/IPv6.html">IPV6</a>
+                            <a href="../Inne/porownanie-windows-linux.html">Porównanie win vs linux</a>
+                            <a href="../Inne/referaty.html">Referaty</a>
+                            <a href="https://learningapps.org/1204391" target="_blank">Symbole</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="countdown_div">
+                        <li id="countdown">
+                          <p id="countdowntitle">Dni do wakacji:</p>
+                          <p id="demo"></p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>Optymalizacja i diagnozowanie</h1>
+            </div>
+            <p>
+                <b>Uzyskiwanie informacji o systemie</b> umożliwia wyświetlanie informacji o konfiguracji sprzętowej, składnikach komputera i oprogramowaniu, w tym o sterownikach. <br>
+                <br>
+                Aby uruchomić kliknij przycisk <b>Start</b>> W polu wyszukiwania wpisz <b>Informacje o systemie</b> , a następnie na liście wyników kliknij pozycję <b>Informacje o systemie.</b> > Można też użyć  msinfo32.exe w polu Uruchom. <br>
+                <br>
+                Monitor niezawodności jest dostępny od Windows Visty w górę -wpisz w systemową wyszukiwarkę "Niezawodność", a następnie wybierz z wyników Wyświetl historię niezawodności. lub użyj polecenia: perfmon /rel <br>
+                <br>
+                Monitor zasobów - resmon - polecenie z wiersza poleceń <br>
+                <br>
+                <b>Indeks wydajności systemu</b> - najniższy z 5 wskaźników: <br>
+                - procesor- obliczenia na sekundę, <br>
+                - pamięć RAM - operacje na sekundę <br>
+                - grafika - wydajność pulpitu <br>
+                - grafika w grach - wydajność grafiki trójwymiarowej <br>
+                - dysk twardy - szybkość transferu <br>
+                <br>
+                <b>Windows 8, 10 -</b> użyj polecenia <b>winsat prepop</b> w oknie PowerShell a następnie komendy: <b>Get-WmiObject -Class Win32_WinSAT</b>
+                Ocena równa 1 oznacza brak stabilności systemu! <br>
+                <br>
+                <b>Linki:</b> <br>
+                <a href="https://www.pcworld.pl/porada/10-praktycznych-narzedzi-Windows-10-ktorych-mozesz-nie-znac,413249.html" target="_blank">Narzędzia Windows 10 - PcWord</a> <br>
+                <a href="https://support.microsoft.com/pl-pl/help/310123." target="_blank">Lista kodów błędów systemowych Windows</a> <br>
+                <a href="https://prezi.com/zbordcvvsueu/lokalizacja-i-naprawa-usterek-systemu-operacyjnego/" target="_blank">Lokalizowanie i naprawa usterek Windows 7</a> <br>
+                <a href="http://pl.reimageplus.com/lp/svs/index.php?channel=youactive&banner=nswpladwnso&adgroup=direct&ads_name=direct&keyword=direct&nms=1&lpx=sys" target="_blank">Windows 7 naprawa</a> <br>
+                <a href="https://www.benchmark.pl/testy_i_recenzje/rozwiazywanie-podstawowych-problemow-z-dyskami-hdd.html" target="_blank">Diagnostyka dysków twardych</a> <br>
+                <a href="https://download.komputerswiat.pl/akcesoria-i-narzedzia/diagnostyka/dysku-twardego/crystaldiskinfo" target="_blank">Komputer świat </a>- diagnostyka dysków <br>
+                <a href="https://www.dobreprogramy.pl/ATTO-Disk-Benchmark,Program,Windows,27685.html" target="_blank">ATTO Disk Benchmark </a>- narzędzie do testowania <br>
+                <a href="http://www.hdtune.com/" target="_blank">HD Tune </a>- do testowania <br>
+                <a href="https://download.komputerswiat.pl/akcesoria-i-narzedzia/diagnostyka/procesora/rightmark-cpu-clock-utility" target="_blank">RightMark Clock Utility </a>-narzędzie do monitorowania  procesora. <br>
+                <a href="https://www.benchmark.pl/testy_i_recenzje/rozwiazywanie-podstawowych-problemow-z-dyskami-hdd.html" target="_blank">MHDD </a>- narzędzie do diagnozowania dysków twardych <br>
+                <a href="https://www.userbenchmark.com/" target="_blank">UserBenchmark </a>- narzędzie do testowania systemu <br>
+                HD Tune - <a href="https://onedrive.live.com/view.aspx?resid=3F8565FB7698CB6!8753&ithint=file%2cpptx&authkey=!AM1cA1XrZDKd3mg" target="_blank">referat</a>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1c5_Su3w7-NtSy_RKoAg8BHNa531tdrEY/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1HwCulRQpfG8Zc30reg6ntBt_jn0KJLdQ/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1REwj5gQPBmrWGd52obvc6wyCzO_8nw_K/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1x2-6HXrl1C-95uhazewc1mpvivt9aV0V/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1lmGC9cXVPDRYhV6Fhu57mPs3iAJel6qH/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/18fRr4Jm9Qu66-VkxU-5eSF7Mfn2WPVjm/preview" frameborder="0"></iframe>
+                </div>
+                <div class="file-div">
+                    <a class="file" href="https://drive.google.com/file/d/154WqysiH0qSfAdGVBD2xkGLaSAvdQ410/view" target="_blank">gnome-disk-utility_3.10.0.orig.tar.xz</a>
+                </div>
+                <div class="file-div">
+                    <a class="file" href="https://drive.google.com/file/d/1Sb1GqKaYMTnhGmadsMr42yEDwivZ_ZHV/view" target="_blank">hdparm-9.43.tar.gz</a>
+                </div>
+                <div class="file-div">
+                    <a class="file" href="https://drive.google.com/file/d/1cicUI6cnaRKYzFfVQ_kltU-1RA9AX4q6/view" target="_blank">hdparm_setup_package.msi</a>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Anna Śmigielska 2020&copy; utwór dostępny na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" target="_blank">Creative Commons</a></p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/countdown.js"></script>
+</body>
+</html>

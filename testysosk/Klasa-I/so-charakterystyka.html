@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl-PL" color-mode="light">
+<head>
+    <title>Klasa I - Informacje</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="TestySosk - Klasa I" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/Information.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <a href="../index.html">
+                    <img class="logo" src="../img/icon.png">
+                </a>
+                <div class="togglescheme">
+                    <button class="color-mode__btn light--hidden">
+                        <img src="../img/sun.svg"/>
+                    </button>
+                    <button class="color-mode__btn dark--hidden">
+                        <img src="../img/moon.svg"/>
+                    </button>
+                </div>
+                <div class="navtogglediv">
+                    <div class="navtoggle" onclick="openNav(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <div class="links" id="links">
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa I</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-I/informacje.html">Informacje</a>
+                            <a href="../Klasa-I/historia.html">Historia</a>
+                            <a href="../Klasa-I/prawa-autorskie.html">Prawa autorskie</a>
+                            <a href="../Klasa-I/so-charakterystyka.html" class="active">SO Charakterystyka</a>
+                            <a href="../Klasa-I/pliki-bat.html">Pliki BAT</a>
+                            <a href="../Klasa-I/uprawnienia-ntfs.html">Uprawnienia NTFS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa II</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-II/informacje.html">Informacje</a>
+                            <a href="../Klasa-II/peryferyjne.html">Peryferyjne</a>
+                            <a href="../Klasa-II/partycje.html">Partycje</a>
+                            <a href="../Klasa-II/uruchamianie-systemu.html">Uruchamianie systemu</a>
+                            <a href="../Klasa-II/zarzadzanie-windows.html">Zarządzanie Windows</a>
+                            <a href="../Klasa-II/optymalizacja-i-diagnozowanie.html">Optymalizacja i diagnozowanie</a>
+                            <a href="../Klasa-II/odzyskiwanie-danych.html">Odzyskiwanie danych</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa III</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-III/informacje.html">Informacje</a>
+                            <a href="../Klasa-III/AdSO.html ">AdSO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../zdalne.html">Zdalne</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Elementy Sieci</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Elementy-Sieci/informacje.html">Informacje</a>
+                            <a href="../Elementy-Sieci/protokoly.html">Protokoły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Linux</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Linux/informacje.html">Informacje</a>
+                            <a href="../Linux/maszyna-wirtualna.html">Maszyna wirtualna</a>
+                            <a href="../Linux/polecenia-linux.html">Polecenia Linux</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../wymagania.html">Wymagania</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Inne</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Inne/IPv6.html">IPV6</a>
+                            <a href="../Inne/porownanie-windows-linux.html">Porównanie win vs linux</a>
+                            <a href="../Inne/referaty.html">Referaty</a>
+                            <a href="https://learningapps.org/1204391" target="_blank">Symbole</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="countdown_div">
+                        <li id="countdown">
+                          <p id="countdowntitle">Dni do wakacji:</p>
+                          <p id="demo"></p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>SO Charakterystyka</h1>
+            </div>
+            <p>
+                <b>Plik zarejestrowany -</b> jest to plik, którego rozszerzenie rozpoznawalne jest w systemie przez określoną aplikację i za pomocą tej aplikacji plik ten jest edytowany lub otwierany. <br>
+                <b>Powłoka -</b>  bazowy program odpowiadający za uruchamianie innych aplikacji, otwieranie dokumentów oraz zadania specjalne, takie jak obsługa paska zadań.<br>
+                W skład standardowej powłoki graficznej Windows wchodzi Eksplorator Windows, <a href="https://pl.wikipedia.org/wiki/Pulpit" target="_blank">Pulpit</a>, menu Start oraz <a href="https://pl.wikipedia.org/wiki/Pasek_zadań" target="_blank">pasek zadań.</a><br>
+                Powłoka tekstowa: Windows to cmd. opcjonalnie - Windows PowerShell. Często używanym określeniem programu komunikacyjnego z systemem operacyjnym jest interfejs (interface).<br>
+                 Najpopularniejszą powłoką w GNU/Linuksie jest <a href="https://pl.wikipedia.org/wiki/Bash" target="_blank">bash (Bourne Again Shell)</a>.<br>
+                Graficzne: - GNOME - Plasma - część środowiska KDE - LINUX aqua - OSx, finder - MAC OS<br>
+                <br>
+            </p>
+                <h2>Budowa Systemu operacyjnego</h2>
+            <p>
+                Przyjęto podział na trzy główne elementy budowy systemu operacyjnego: <br>
+                    - Jądro systemu wykonujące i kontrolujące ww. zadania.<br>
+                    - Powłoka – specjalny program komunikujący użytkownika z systemem operacyjnym,<br>
+                    - System plików – sposób zapisu struktury danych na nośniku.<br>
+                <br>
+            </p>
+                <h2>Zasoby systemu: msinfo32<br>Cechy Systemów Operacyjnych:</h2>
+            <p>
+                <b>- Wielodostępność -</b> dwóch lub więcej użytkowników może jednocześnie pracować i współdzielić zasoby.<br>
+                <b>- Wielozadaniowość -</b> system może uruchomić kilka aplikacji w tym samym czasie.<br>
+                <b>- Wieloprocesowość -</b> komputer może mieć dwa lub więcej procesorów CPU współdzielonych przez programy.<br>
+                <b>- Wielowątkowość -</b> program może zostać podzielony na części, które mogą być uruchamiane przez system operacyjny w miarę potrzeb.<br>
+                <b>- Wywłaszczalność -</b> system może wstrzymać aktualnie wykonywane zadanie, aby umożliwić działanie innemu.<br>
+                <br>
+            </p>
+                <h2>Rodzaje jąder:</h2>
+            <p>
+                <a href="https://pl.wikipedia.org/wiki/Jądro_monolityczne" target="_blank"><b>Jądro monolityczne –</b></a> często stosowane w systemach typu Unix. Wszystkie zadania są wykonywane przez jądro, będące jednym, dużym programem działającym w trybie jądra. Przykładami takiego jądra mogą być: Linux, OpenBSD, FreeBSD, <br>
+                <a href="https://pl.wikipedia.org/wiki/Mikrojądro" target="_blank"><b>mikrojądro –</b></a> w tej technice z monolitycznego jądra zostaje tylko jego podstawowa część, a części odpowiedzialne za bardziej wyrafinowane funkcje są wydzielone do funkcjonalnych bloków albo realizowane jako zwykłe procesy w trybie użytkownika.<br>
+                <a href="https://pl.wikipedia.org/wiki/Jądro_hybrydowe" target="_blank"><b>jądro hybrydowe –</b></a> kompromis między architekturą jądra monolitycznego i mikrojądra.Stosowane w rodzinie Windows NT.<br>
+                <a href="https://en.wikipedia.org/wiki/Mac_OS_nanokernel" target="_blank"><b>nanokernel –</b></a> technika zbliżona do techniki mikrojądra, różnica w wielkości – nanokernel jest jeszcze mniejszy.<br>
+                <a href="https://en.wikipedia.org/wiki/Exokernel" target="_blank"><b>exokernel –</b></a> architektura będąca odmianą nanojądra. Cechą wyróżniającą jest możliwość zarządzania zasobami systemu przez nieuprzywilejowanego użytkownika, a rola jądra sprowadza się do zabezpieczania zasobów. Przykładem systemu korzystającego z tego typu jądra jest system XOK<br>
+                <br>
+                <b>Bezpieczeństwo systemów operacyjnych:</b> <a href="https://pbc.gda.pl/Content/12860/phd_wrobel_michal.pdf" target="_blank">link1</a> <a href="http://www.ujk.edu.pl/strony/Zbigniew.Bem/index_pliki/prawy_pliki/ochrona/wyklad4.pdf" target="_blank">link2</a><br>
+                Ustawienia zabezpieczeń lokalnych: secpol.msc<br>
+                <b>Ładowanie systemu operacyjnego Windows:</b><br>
+                - Procedura POST - test poprawności działania podstawowych podzespołów.<br>
+                - NTLDR nadzoruje wybór systemu operacyjnego zgodnie z zapisami w BOOT.INI i uruchamia NTOSKRNL<br>
+                - NTOSKRNL ładuje do pamięci pozostałe pliki systemowe,<br>
+                - Sterowniki urządzeń i uruchamia usługi automatyczne<br>
+                <br>
+                <a href="https://support.microsoft.com/pl-pl/help/256986/windows-registry-information-for-advanced-users" target="_blank">Rejestr systemowy Windows na Microsoft</a>
+                <br>
+                <br>
+                <h3>Maszyny wirtualne - <a href="http://www.virtual-it.pl/artykuly/1929-wirtualny-system-jak-zaczac-podstawy-pracy-z-virtualbox.html?limitstart=0" target="_blank">praca z VirtualBox.</a><br>Maszyny wirtualne - <a href="https://pl.wikipedia.org/wiki/Maszyna_wirtualna" target="_blank">opis, definicja</a></h3>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1T96NBdwy-clThcJAVh0mwzT7LirjJ5ZS/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1Bis_h8uOJsuxx3SLvKq-V-8OlD7OdkO4/preview" frameborder="0"></iframe>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Anna Śmigielska 2020&copy; utwór dostępny na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" target="_blank">Creative Commons</a></p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/countdown.js"></script>
+</body>
+</html>

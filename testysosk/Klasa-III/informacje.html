@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pl-PL" color-mode="light">
+<head>
+    <title>Klasa III - Informacje</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="TestySosk - Klasa I" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/Information.css" />
+    <link rel="stylesheet" href="../CSS/KlasaIII/Information.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/bat.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <a href="../index.html">
+                    <img class="logo" src="../img/icon.png">
+                </a>
+                <div class="togglescheme">
+                    <button class="color-mode__btn light--hidden">
+                        <img src="../img/sun.svg"/>
+                    </button>
+                    <button class="color-mode__btn dark--hidden">
+                        <img src="../img/moon.svg"/>
+                    </button>
+                </div>
+                <div class="navtogglediv">
+                    <div class="navtoggle" onclick="openNav(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <div class="links" id="links">
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa I</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-I/informacje.html">Informacje</a>
+                            <a href="../Klasa-I/historia.html">Historia</a>
+                            <a href="../Klasa-I/prawa-autorskie.html">Prawa autorskie</a>
+                            <a href="../Klasa-I/so-charakterystyka.html">SO Charakterystyka</a>
+                            <a href="../Klasa-I/pliki-bat.html">Pliki BAT</a>
+                            <a href="../Klasa-I/uprawnienia-ntfs.html">Uprawnienia NTFS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa II</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-II/informacje.html">Informacje</a>
+                            <a href="../Klasa-II/peryferyjne.html">Peryferyjne</a>
+                            <a href="../Klasa-II/partycje.html">Partycje</a>
+                            <a href="../Klasa-II/uruchamianie-systemu.html">Uruchamianie systemu</a>
+                            <a href="../Klasa-II/zarzadzanie-windows.html">Zarządzanie Windows</a>
+                            <a href="../Klasa-II/optymalizacja-i-diagnozowanie.html">Optymalizacja i diagnozowanie</a>
+                            <a href="../Klasa-II/odzyskiwanie-danych.html">Odzyskiwanie danych</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa III</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-III/informacje.html" class="active">Informacje</a>
+                            <a href="../Klasa-III/AdSO.html">AdSO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../zdalne.html">Zdalne</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Elementy Sieci</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Elementy-Sieci/informacje.html">Informacje</a>
+                            <a href="../Elementy-Sieci/protokoly.html">Protokoły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Linux</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Linux/informacje.html">Informacje</a>
+                            <a href="../Linux/maszyna-wirtualna.html">Maszyna wirtualna</a>
+                            <a href="../Linux/polecenia-linux.html">Polecenia Linux</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../wymagania.html">Wymagania</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Inne</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Inne/IPv6.html">IPV6</a>
+                            <a href="../Inne/porownanie-windows-linux.html">Porównanie win vs linux</a>
+                            <a href="../Inne/referaty.html">Referaty</a>
+                            <a href="https://learningapps.org/1204391" target="_blank">Symbole</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="countdown_div">
+                        <li id="countdown">
+                          <p id="countdowntitle">Dni do wakacji:</p>
+                          <p id="demo"></p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>Klasa III</h1>
+            </div>
+            <p>
+                <a href="https://www.youtube.com/channel/UCveyu9awCAS_gFBCF8OuWEQ/featured" target="_blank">Internetowe rewolucje</a> <br>
+                <b>Admin2018</b> <br>
+                <a href="https://pl.wikipedia.org/wiki/Port_protokołu" target="_blank">Porty i protokoły</a> <br>
+                <a href="https://www.bezkompilatora.pl/jak-zainstalowac-linuxa-cztery-sposoby-na-start-czesc-1/" target="_blank">Instalacja Linux</a> <br>
+                <a href="https://pl.wikipedia.org/wiki/Szerokopasmowy_dostęp_do_internetu" target="_blank">Szerokopasmowy dostęp do internetu</a> <br>
+                <br>
+                <b>Serwery:</b><br>
+                <a href="https://www.pcworld.pl/porada/Apache-jak-uruchomic-wlasny-serwer-WWW,275962.html" target="_blank">- apache,</a> <br>
+                <a href="http://www.ubuntu-pomoc.org/samba-–-udostepnianie-plikow-w-domowej-sieci-–-cz-1/" target="_blank">- samba,</a> <br>
+                <br>
+                <a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726004(v=ws.11)?redirectedfrom=MSDN" target="_blank">ACL - ustawianie uprawnień NTFS dla Windows Server</a> <br>  
+                <br>
+                <b>Tematy:</b> <br>
+                ABD Ograniczenia w postaci klucza obcego (pgAdminIII) <br>
+                Zwykłe i kaskadowe usuwanie tabel za pomocą narzędzia pgAdminIII praz instrukcji SQL. <br>
+                ASO Archiwizacja zasobów sieciowych <br>
+                Konfiguracja Firewall w Windows Server 2008. <br>
+                SBD Eksport i import danych do bazy z pliku tekstowego. <br>
+                <br>
+                <b>Grupa I:</b> <br>
+                1. Jakie polecenie przenosi plik lub zmienia nazwę pliku ?
+                2. Jakie polecenie wypisuje zawartość katalogu wraz z uprawnieniami? <br>
+                3. Co wykonuje polecenie: ps -a ? <br>
+                4. Co wykonuje polecenie: chmod ? <br>
+                5. Jaki katalog zawiera ustawienia głównego administratora każdego systemu uniksowego, który ma maksymalne uprawnienia ? <br>
+                6. Jakim poleceniem przechodzimy na konto root? <br>
+                7. Jakim poleceniem sprawdzamy kto jest aktualnie zalogowany? <br>
+                <br>
+                <b>Grupa II:</b> <br>
+                1. Jakie polecenie usuwa pliki ? <br>
+                2. Jakie polecenie tworzy katalogi ? <br>
+                3. Co wykonuje polecenie: man  ? <br>
+                4. Co wykonuje polecenie: chmod ? <br>
+                5. Jaki katalog zawiera opis urządzeń - za ich pośrednictwem system komunikuje się z urządzeniami ? <br>
+                6. Jakim poleceniem tworzymy nowego użytkownika? <br>
+                7. Jakim poleceniem sprawdzamy kto jest aktualnie zalogowany? <br>
+                <br>
+                <b>Grupa III:</b> <br>
+                1. Jakie polecenie kopiuje pliki i katalogi? <br>
+                2. Jakie polecenie tworzy nowy plik? <br>
+                3. Co wykonuje polecenie: pwd? <br>
+                4. Co wykonuje polecenie: kill? <br>
+                5. Jaki katalog zawiera pliki konfiguracyjne, ustawienia systemowe? <br>
+                6. Jakim poleceniem przechodzimy na konto użytkownika klasa? <br>
+                7. Jakim poleceniem sprawdzamy uprawnienia do plików i katalogów? <br>
+                <br>
+                <b>ee08 - styczeń2020:</b> <br>
+                <a href="https://arkusze.pl/zawodowy/ee08-2020-styczen-egzamin-zawodowy-pisemny.pdf" target="_blank">- pytania</a> <br>
+                <a href="https://arkusze.pl/zawodowy/ee08-2020-styczen-egzamin-zawodowy-pisemny-odpowiedzi.pdf" target="_blank">- odpowiedzi</a> <br>
+                <br>
+                <a href="./Klasa-III/protokoły">Protokoły krzyżówka</a> <br>
+                <div class="table_1_div">
+                    <iframe class="table_1" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRMH4Q9Soy4LNAtDspXjIHuHJQk7LmPu7uCzu_fGh6aq5pckQN3mTz5d3sft-1dGk7fjlz-n-v6pAzz/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/19dTqXne4TuFUarQs7FCj5wtG_66syjdo/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1ut_mcF_nI7wT1BUqHhV8tXBGuWWKc0Pl/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1_HvHiuJy3_uV-I8ZYs6EAw0TZoMYUtbJ/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1g3pDzZTaUW_qAkiTD3uxMGS8-bKeZ9lK/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1_hGvnAmA6bjnCaQjsV5DwO4tnkY3UmFO/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1FlWEg3TUxxhJ_hxKmR_StpEOIkCXL9FJ/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1HJbmTBzwJTuu5JQd_f1tJyoke2ZgnUM5/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1y9EjnCC1Dqsm4dyYaM95Cnliu3ugxU1C/preview" frameborder="0"></iframe>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Anna Śmigielska 2020&copy; utwór dostępny na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" target="_blank">Creative Commons</a></p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/countdown.js"></script>
+</body>
+</html>

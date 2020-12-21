@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl-PL" color-mode="light">
+<head>
+    <title>Klasa III - Informacje</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="TestySosk - Klasa I" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/Information.css" />
+    <link rel="stylesheet" href="../CSS/KlasaIII/AdSO.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/bat.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <a href="../index.html">
+                    <img class="logo" src="../img/icon.png">
+                </a>
+                <div class="togglescheme">
+                    <button class="color-mode__btn light--hidden">
+                        <img src="../img/sun.svg"/>
+                    </button>
+                    <button class="color-mode__btn dark--hidden">
+                        <img src="../img/moon.svg"/>
+                    </button>
+                </div>
+                <div class="navtogglediv">
+                    <div class="navtoggle" onclick="openNav(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <div class="links" id="links">
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa I</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-I/informacje.html">Informacje</a>
+                            <a href="../Klasa-I/historia.html">Historia</a>
+                            <a href="../Klasa-I/prawa-autorskie.html">Prawa autorskie</a>
+                            <a href="../Klasa-I/so-charakterystyka.html">SO Charakterystyka</a>
+                            <a href="../Klasa-I/pliki-bat.html">Pliki BAT</a>
+                            <a href="../Klasa-I/uprawnienia-ntfs.html">Uprawnienia NTFS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa II</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-II/informacje.html">Informacje</a>
+                            <a href="../Klasa-II/peryferyjne.html">Peryferyjne</a>
+                            <a href="../Klasa-II/partycje.html">Partycje</a>
+                            <a href="../Klasa-II/uruchamianie-systemu.html">Uruchamianie systemu</a>
+                            <a href="../Klasa-II/zarzadzanie-windows.html">Zarządzanie Windows</a>
+                            <a href="../Klasa-II/optymalizacja-i-diagnozowanie.html">Optymalizacja i diagnozowanie</a>
+                            <a href="../Klasa-II/odzyskiwanie-danych.html">Odzyskiwanie danych</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa III</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-III/informacje.html">Informacje</a>
+                            <a href="../Klasa-III/AdSO.html" class="active">AdSO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../zdalne.html">Zdalne</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Elementy Sieci</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Elementy-Sieci/informacje.html">Informacje</a>
+                            <a href="../Elementy-Sieci/protokoly.html">Protokoły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Linux</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Linux/informacje.html">Informacje</a>
+                            <a href="../Linux/maszyna-wirtualna.html">Maszyna wirtualna</a>
+                            <a href="../Linux/polecenia-linux.html">Polecenia Linux</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../wymagania.html">Wymagania</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Inne</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Inne/IPv6.html">IPV6</a>
+                            <a href="../Inne/porownanie-windows-linux.html">Porównanie win vs linux</a>
+                            <a href="../Inne/referaty.html">Referaty</a>
+                            <a href="https://learningapps.org/1204391" target="_blank">Symbole</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="countdown_div">
+                        <li id="countdown">
+                          <p id="countdowntitle">Dni do wakacji:</p>
+                          <p id="demo"></p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>AdSO</h1>
+            </div>
+            <p>
+                1. Korzystanie z wybranych usług oferowanych przez sieciowe systemy operacyjne <br>
+                2. Maszyny wirtualne <br>
+                3. Sieciowy system operacyjny - Linux <br>
+                4. Administrowanie systemem Linux <a href="https://www.speedtest.pl/konfiguracja_adresu_ip_linux" target="_blank">Konfiguracja adresu IP w Linux</a> <br>
+                5. Usługi sieciowe w systemie Linux <br>
+                6. Sieciowy system operacyjny - Windows Server <br>
+                7. Bezpieczeństwo danych <br>
+                <br>
+                <a href="https://www.youtube.com/watch?v=UY0y-qxM8N0" target="_blank">Instalacja serwera Windows 2008</a> <br>
+                <a href="http://www.instalki.pl/demonstracje/systemowe/15926-jak-zainstalowac-windows-10.html" target="_blank">Instalacja Windows na Virtual Box</a> <br>
+                <a href="https://www.youtube.com/watch?v=mppvkhmOI1s" target="_blank">Konfiguracja serwera 2008</a> <br>
+                <a href="http://slow7.pl/server-2003-2008/itemlist/tag/Serwer" target="_blank">Poradnik administratora serwer 2012</a> <br>
+                <a href="https://azure.microsoft.com/en-us/?ocid=cloudplat_hp" target="_blank">Windows server trial</a> <br>
+                <a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732642(v=ws.11)?redirectedfrom=MSDN" target="_blank">Foldery macierzyste</a> <br>
+                <a href="https://www.dobreprogramy.pl/DjLeo/Windows-Server--Kompendium-wiedzy-Czesc--Active-Directory-Domain-Services-Instalacja-Konfiguracja,38332.html" target="_blank">Opis ActiveDirectory</a> <br>
+                <a href="https://rufus.ie/" target="_blank">Tworzenie obrazu bootowalnego ISO</a> <br>
+                <a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726004(v=ws.11)?redirectedfrom=MSDN#BKMK_interface" target="_blank">Monitorowanie \ Windows Server 2008</a> <br>
+                <a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726004(v=ws.11)?redirectedfrom=MSDN#BKMK_cp" target="_blank">Puls servera</a> <br>
+                <br>
+                <b>Określanie uprawnień do folderów udostępnionych</b> <br>
+                <a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726004(v=ws.11)?redirectedfrom=MSDN#BKMK_interface" target="_blank">Przy użyciu interfejsu systemu Windows</a> <br>
+                <a href="https://rufus.ie/" target="_blank">Przy użyciu wiersza polecenia</a> <br>
+                <br>
+                <b>Aby określić uprawnienia do folderu udostępnionego przy użyciu interfejsu systemu Windows</b> <br>
+                1. Otwórz przystawkę Zarządzanie komputerem. <br>
+                2. Jeśli wyświetlone zostanie okno dialogowe Kontrola konta użytkownika, potwierdź chęć wyświetlenia akcji, a następnie kliknij przycisk Tak. <br>
+                3. W drzewie konsoli kliknij węzeł Narzędzia systemowe, kliknij pozycję Foldery udostępnione, a następnie kliknij pozycję Udziały. <br>
+                4. W okienku szczegółów kliknij prawym przyciskiem myszy folder udostępniony, a następnie kliknij polecenie Właściwości. <br>
+                5. Na karcie Uprawnienia udziału określ odpowiednie uprawnienia: <br>
+                - Aby przypisać użytkownikowi lub grupie uprawnienia do folderu udostępnionego, kliknij przycisk Dodaj. W oknie dialogowym Wybieranie: Użytkownicy, komputery lub grupy wyszukaj lub wpisz nazwę użytkownika lub grupy, a następnie kliknij przycisk OK. <br>
+                - Aby odebrać dostęp do folderu udostępnionego, kliknij przycisk Usuń. <br>
+                - Aby ustawić indywidualne uprawnienia dla użytkownika lub grupy, w polu Uprawnienia dla grupy lub użytkownika zaznacz pole wyboru Zezwalaj lub Odmów. <br>
+                <br>
+                6. Aby ustawić uprawnienia do plików i folderów mające zastosowanie do użytkowników logujących się lokalnie lub przy użyciu Usług pulpitu zdalnego, kliknij kartę Zabezpieczenia i ustaw odpowiednie uprawnienia. <br>
+                <br>
+                <b>Aby określić uprawnienia do pliku przy użyciu wiersza poleceń</b> <br>
+                1. Aby otworzyć okno wiersza polecenia z podwyższonym poziomem uprawnień, kliknij przycisk Start, wskaż polecenie Wszystkie programy, kliknij polecenie Akcesoria, kliknij prawym przyciskiem myszy polecenie Wiersz polecenia, a następnie kliknij polecenie Uruchom jako administrator. <br>
+                2. Jeśli wyświetlone zostanie okno dialogowe Kontrola konta użytkownika, potwierdź chęć wyświetlenia akcji, a następnie kliknij przycisk Tak. <br>
+                3. Aby określić indywidualne uprawnienia dla użytkownika lub grupy, wpisz: <br>
+                - cacls /G [user:permission] <br>
+                - Na przykład aby określi uprawnienie Zapis dla użytkownika o nazwie Monika do pliku o nazwie 002.jpg, wpisz: <br>
+                - cacls 002.jpg /G Monica:w <br>
+                <br>
+                4. Aby odebrać dostęp do folderu udostępnionego, wpisz: <br>
+                - cacls /R [user] <br>
+                - Na przykład aby odebrać dostęp do folderu udostępnionego użytkownikowi o nazwie Monika, wpisz: <br>
+                - Cacls /R Monica <br>
+                <div class="table_1_div">
+                    <iframe class="table_1" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRDJ6ao0pFQaKY6KaYAJrq0YW0mCd_rDYIJsNAu4UeqSGBU6BNoFcg9VSf9Arp1Gx-RC5Tdbkdj3TQB/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" frameborder="0"></iframe>
+                </div>
+                <div class="table_2_div">
+                    <iframe class="table_2" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vThPX9nryFFA-Bw0H6UNidPZp7HYXOqejuGUrotfZJ6hmz2ChtK-ZX8lQCv8At-FTf-maTBHciBOrJk/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1_P-xcGe4XkewMoDWL6e1Iq6m-c_wTBTl/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1bXit_OXU4-7WWjVDeTg9yjhScs_3mZwU/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="triple-pres-small-div">
+                    <iframe class="presentation" id="triple-pres-small" src="https://drive.google.com/file/d/1g2NhTi8QZtwzYSB0odPT5kcUagypNBDs/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="triple-pres-small-div">
+                    <iframe class="presentation" id="triple-pres-small" src="https://drive.google.com/file/d/18BvsclbqpifVvnpklrThZ2v9pJKillI7/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="triple-pres-small-div">
+                    <iframe class="presentation" id="triple-pres-small" src="https://drive.google.com/file/d/1G19rlZmslqDzn8Mc5BaCy_1i8PGf8_zc/preview" frameborder="0"></iframe>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Anna Śmigielska 2020&copy; utwór dostępny na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" target="_blank">Creative Commons</a></p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/countdown.js"></script>
+</body>
+</html>

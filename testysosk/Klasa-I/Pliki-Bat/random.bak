@@ -1,0 +1,29 @@
+@echo off
+:poczatek
+echo.
+rem %random% daje numer pomiêdzy 0 a 32767
+set losowa=%random%
+set /a losowa=(losowa*100/32767)+1
+echo Wylosowalem liczbe od 1 do 100. Sprobuj ja zgadnac!
+set licznik=0
+:powtorz
+echo.
+set liczba=0
+set /p liczba=Podaj liczbe:
+if %liczba% lss 1 goto powtorz 
+if %liczba% gtr 100  goto powtorz 
+set /a licznik=licznik+1
+if %liczba% equ %losowa%  goto koniec 
+if %liczba% gtr %losowa%  goto mniejsza 
+:wieksza
+echo Podana liczba jest za mala!
+goto powtorz
+:mniejsza
+echo Podana liczba jest za duza!
+goto powtorz
+:koniec
+echo Zgadles za %licznik% razem!
+echo.
+set /p podaj=Jeszcze raz (tak/nie)?
+if  %podaj% == tak goto poczatek 
+if  %podaj% == t  goto poczatek 

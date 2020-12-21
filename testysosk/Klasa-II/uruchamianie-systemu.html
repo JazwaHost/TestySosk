@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl-PL" color-mode="light">
+<head>
+    <title>Klasa I - Informacje</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="TestySosk - Klasa I" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/Information.css" />
+    <link rel="stylesheet" href="../CSS/KlasaII/Information.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/bat.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <a href="../index.html">
+                    <img class="logo" src="../img/icon.png">
+                </a>
+                <div class="togglescheme">
+                    <button class="color-mode__btn light--hidden">
+                        <img src="../img/sun.svg"/>
+                    </button>
+                    <button class="color-mode__btn dark--hidden">
+                        <img src="../img/moon.svg"/>
+                    </button>
+                </div>
+                <div class="navtogglediv">
+                    <div class="navtoggle" onclick="openNav(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <div class="links" id="links">
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa I</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-I/informacje.html">Informacje</a>
+                            <a href="../Klasa-I/historia.html">Historia</a>
+                            <a href="../Klasa-I/prawa-autorskie.html">Prawa autorskie</a>
+                            <a href="../Klasa-I/so-charakterystyka.html">SO Charakterystyka</a>
+                            <a href="../Klasa-I/pliki-bat.html">Pliki BAT</a>
+                            <a href="../Klasa-I/uprawnienia-ntfs.html">Uprawnienia NTFS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa II</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-II/informacje.html">Informacje</a>
+                            <a href="../Klasa-II/peryferyjne.html">Peryferyjne</a>
+                            <a href="../Klasa-II/partycje.html">Partycje</a>
+                            <a href="../Klasa-II/uruchamianie-systemu.html" class="active">Uruchamianie systemu</a>
+                            <a href="../Klasa-II/zarzadzanie-windows.html">Zarządzanie Windows</a>
+                            <a href="../Klasa-II/optymalizacja-i-diagnozowanie.html">Optymalizacja i diagnozowanie</a>
+                            <a href="../Klasa-II/odzyskiwanie-danych.html">Odzyskiwanie danych</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa III</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-III/informacje.html">Informacje</a>
+                            <a href="../Klasa-III/AdSO.html ">AdSO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../zdalne.html">Zdalne</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Elementy Sieci</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Elementy-Sieci/informacje.html">Informacje</a>
+                            <a href="../Elementy-Sieci/protokoly.html">Protokoły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Linux</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Linux/informacje.html">Informacje</a>
+                            <a href="../Linux/maszyna-wirtualna.html">Maszyna wirtualna</a>
+                            <a href="../Linux/polecenia-linux.html">Polecenia Linux</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../wymagania.html">Wymagania</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Inne</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Inne/IPv6.html">IPV6</a>
+                            <a href="../Inne/porownanie-windows-linux.html">Porównanie win vs linux</a>
+                            <a href="../Inne/referaty.html">Referaty</a>
+                            <a href="https://learningapps.org/1204391" target="_blank">Symbole</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="countdown_div">
+                        <li id="countdown">
+                          <p id="countdowntitle">Dni do wakacji:</p>
+                          <p id="demo"></p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>Uruchamianie systemu</h1>
+            </div>
+            <p>
+                <b>Procedura POST (Power-On Self Test)</b> - test poprawności działania podstawowych podzespołów <br>
+                1. Faza pierwsza POST to sprawdzenie obecności i prawidłowości działania układów niezbędnych do działania komputera. Na tym etapie nie jest dostępna      jeszcze żadna karta rozszerzenia i błędy są komunikowane przez miniaturowy głośnik umieszczony w obudowie jednostki systemowej. <br>
+                2. Następnie jest testowana poprawność pracy procesora, później pamięci RAM i następnie karty graficznej. Niepomyślny wynik POSTu skutkuje serią odgłosów wydanych przez głośnik. Odgłosy te, a dokładniej ich ilość i czas trwania są kodem błędu.
+                Obecnie o rezultacie testu POST płyty główne informują za pomocą kolorowych diod LED lub poprzez komunikaty głosowe <br>
+                3. Ostatnia faza procedury POST składa się z testu pamięci RAM oraz testu dysków twardych. Gdy test POST zostanie zakończony i nie zostaną znalezione żadne błędy komputer wyda pojedynczy pisk  i rozpocznie procedurę uruchamiania systemu operacyjnego. <br>
+                <br>
+                <a href="https://www.dell.com/support/article/pl-pl/sln151688/do-czego-służy-narzędzie-msconfig-na-komputerze-firmy-dell-z-systemem-windows-7?lang=pl"target="_blank">msconfig - Windows 7</a> <br>
+                <a href="https://support.microsoft.com/en-us/windows/advanced-startup-options-including-safe-mode-b90e7808-80b5-a291-d4b8-1a1af602b617#1TC=windows-vista"target="_blank">Uruchamianie systemu Windows w trybie awaryjnym</a> <br>
+                <br>
+                Przykłady przyspieszania startu systemu: <br>
+                1 - Przejdź do zakładki Uruchamianie i odhacz zbędne programy. Windows po zatwierdzeniu zmian poprosi cię o restart komputera <br>
+                2 - Czysty start - w zakładce Uruchamianie kliknij Wyłącz wszystkie a w zakładce Usługi zaznacz Ukryj wszystkie aplikacje Microsoft i kliknij Wyłącz wszystkie. Zrestartuj komputer a Windows XP uruchomi się tylko z systemowymi usługami i aplikacjami co da bardzo szybki start. Ponadto wyeliminuje takie problemy jak zawieszenie się w trakcie startu podczas ostatniej fazy, dzięki wył. np. Usługi inteligentnego transferu w tle <br>
+                <br>
+                <a href="https://pccentre.pl/article/show/Optymalizacja_systemu_Windows_7/id=17634"target="_blank">Przyspieszanie Windows 7</a> <br>
+                Pliki specjalne: ntoskrnl.exe, hal.dll, winlogon.exe, System.dat, User.dat, System.ini i Win.ini <br>
+                <br>
+                <b>Boot Configuration Data</b> <br>
+                Jest magazynem, w którym system Windows Vista (a także późniejsze) przechowują pliki oraz ustawienia aplikacji dotyczące rozruchu. <b>BCDEdit.exe</b> jest edytorem z linii poleceń systemu, dzięki któremu możemy zarządzać magazynem danych konfiguracji rozruchu. Aplikacja ta ma funkcjonalność zbliżoną do <b>Bootcfg.exe</b> znanego ze starszych edycji Windows, z tymże jednak, iż oferuje o wiele więcej opcji. W <b>BCDedit</b> zostały prowadzone rozwiązania, które oferują ulepszone mechanizmy związane z obsługą rozruchu. BCD odnajdziemy w: <br>
+                - W folderze Boot, który umieszczony jest na partycji aktywnej, jeśli komputer wyposażony jest w BIOS. <br>
+                - Na specjalnej partycji EFI, gdy komputer wyposażony jest w to rozwiązanie. <br>
+                <br>
+                <b>Jak możemy edytować magazyn BCD?</b> <br>
+                Zakładka Uruchamianie i odzyskiwanie we Właściwościach systemu. Zmienimy tutaj czas, w jakim możemy uruchamiać systemy operacyjne, jeśli mamy ich kilka na dysku twardym, a także zdecydujemy o pierwszeństwie ładowania. Skonfigurujemy także opcje związane z zachowaniem się systemu w wypadku wystąpienia awarii. <br>
+                <br>
+                <b>Przykładowy plik Boot.ini:</b> <br>
+                [boot loader] <br>
+                timeout=30 <br>
+                default=scsi(0)disk(0)rdisk(0)partition(1)\winnt <br>
+                [operating systems] <br>
+                scsi(0)disk(0)rdisk(0)partition(1)\winnt = "Windows NT" /NODEBUG C:\ = "Previous Operating System on C:\" <br>
+                <br>
+                <b>Znaczenie danych w pliku Boot.ini:</b> <br>
+                - Parametr „timeout” określa, jak długo system Windows czeka, zanim wybierze domyślny system operacyjny. <br>
+                - Parametr „default” określa domyślny system operacyjny. <br>
+                - Parametr „scsi(0)” oznacza, że za urządzenie jest odpowiedzialny kontroler podstawowy (zazwyczaj jest to jedyny kontroler). Jeśli istnieją dwa kontrolery SCSI, a dysk jest podłączony do drugiego, to kontroler ma nazwę „scsi(1)”. <br>
+                - Jeśli w systemie są używane dyski IDE, EIDE, ESDI lub karty SCSI bez wbudowanego systemu BIOS, należy zastąpić parametr „SCSI” parametrem „Multi”. <br>
+                - Parametr „disk(0)” odnosi się do jednostki logicznej (LUN) SCSI, która ma być użyta. Może to być oddzielny dysk, ale znaczna większość konfiguracji urządzeń SCSI ma tylko jeden numer LUN dla każdego identyfikatora SCSI. <br>
+                - Parametr „rdisk(0)” odnosi się do fizycznego dysku 1. <br>
+                - Parametr „partition(1)” w tym przykładzie wskazuje na jedyną partycję na pierwszym dysku w komputerze. Jeśli byłyby 2 partycje, C i D, dysk C odpowiadałby parametrowi partition(1), a dysk D odpowiadałby parametrowi partition(2). <br>
+                - Parametr wielokrotnego rozruchu, jeśli występuje, powoduje sprawdzenie folderu Winnt w celu dokonania rozruchu z określonego dysku kontrolera SCSI oraz z określonej partycji. <br>
+                - Parametr /NODEBUG określa, że żadne informacje dotyczące debugowania nie będą monitorowane. Informacje dotyczące debugowania są użyteczne tylko dla deweloperów. <br>
+                - Można dodać przełącznik /SOS, aby podczas rozruchu systemu Windows były wyświetlane nazwy ładowanych sterowników. Domyślnie na ekranie programu ładującego system operacyjny są wyświetlane jedynie kropki postępu. <br>
+                - Parametr „Previous Operating System on C:\” określa, że poprzednim systemem operacyjnym był MS-DOS, ponieważ ścieżka „C:\” jest ścieżką systemu MS-DOS. <br>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1VNtrHHwC0FY-UTIjteskbjywKqt-tiDa/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1MvQCPvqznjMWfhVoinEwOSwuIDKaa5oB/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1CZJ2OF5cmosCc3yyVt-kU-eVJliEh3EL/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="pres-small-div">
+                    <iframe class="presentation" id="pres-small" src="https://drive.google.com/file/d/1fC8CxQrRWONCZUxeZqsHTSJmhvZPIZ2b/preview" frameborder="0"></iframe>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Anna Śmigielska 2020&copy; utwór dostępny na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" target="_blank">Creative Commons</a></p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/countdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+@echo off
+echo podaj parametr
+set /p l1=podaj liczbe 1:
+set /p z=podaj znak dzia³ania:
+set /p l2=podaj liczbe 2:
+set /a wynik=%l1% %z% %l2%
+echo wynik="%wynik%"
+pause
+
+

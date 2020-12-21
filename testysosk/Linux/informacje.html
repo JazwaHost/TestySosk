@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pl-PL" color-mode="light">
+<head>
+    <title>Klasa I - Informacje</title>
+    <link rel="shortcut icon" href="../img/favicon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="TestySosk - Klasa I" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/KlasaI/Information.css" />
+    <link rel="stylesheet" href="../CSS/Linux/information.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav_header">
+                <a href="../index.html">
+                    <img class="logo" src="../img/icon.png">
+                </a>
+                <div class="togglescheme">
+                    <button class="color-mode__btn light--hidden">
+                        <img src="../img/sun.svg"/>
+                    </button>
+                    <button class="color-mode__btn dark--hidden">
+                        <img src="../img/moon.svg"/>
+                    </button>
+                </div>
+                <div class="navtogglediv">
+                    <div class="navtoggle" onclick="openNav(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <div class="links" id="links">
+                    <li><a href="../index.html">Strona Główna</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa I</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-I/informacje.html">Informacje</a>
+                            <a href="../Klasa-I/historia.html">Historia</a>
+                            <a href="../Klasa-I/prawa-autorskie.html">Prawa autorskie</a>
+                            <a href="../Klasa-I/so-charakterystyka.html">SO Charakterystyka</a>
+                            <a href="../Klasa-I/pliki-bat.html">Pliki BAT</a>
+                            <a href="../Klasa-I/uprawnienia-ntfs.html">Uprawnienia NTFS</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa II</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-II/informacje.html">Informacje</a>
+                            <a href="../Klasa-II/peryferyjne.html">Peryferyjne</a>
+                            <a href="../Klasa-II/partycje.html">Partycje</a>
+                            <a href="../Klasa-II/uruchamianie-systemu.html">Uruchamianie systemu</a>
+                            <a href="../Klasa-II/zarzadzanie-windows.html">Zarządzanie Windows</a>
+                            <a href="../Klasa-II/optymalizacja-i-diagnozowanie.html">Optymalizacja i diagnozowanie</a>
+                            <a href="../Klasa-II/odzyskiwanie-danych.html">Odzyskiwanie danych</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Klasa III</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Klasa-III/informacje.html">Informacje</a>
+                            <a href="../Klasa-III/AdSO.html">AdSO</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../zdalne.html">Zdalne</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Elementy Sieci</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Elementy-Sieci/informacje.html">Informacje</a>
+                            <a href="../Elementy-Sieci/protokoly.html">Protokoły</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Linux</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Linux/informacje.html" class="active">Informacje</a>
+                            <a href="../Linux/maszyna-wirtualna.html">Maszyna wirtualna</a>
+                            <a href="../Linux/polecenia-linux.html">Polecenia Linux</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="../wymagania.html">Wymagania</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"><a>Inne</a></button>
+                            <div class="dropdown-content">
+                            <a href="../Inne/IPv6.html">IPV6</a>
+                            <a href="../Inne/porownanie-windows-linux.html">Porównanie win vs linux</a>
+                            <a href="../Inne/referaty.html">Referaty</a>
+                            <a href="https://learningapps.org/1204391" target="_blank">Symbole</a>
+                            </div>
+                        </div>
+                    </li>
+                    <div id="countdown_div">
+                        <li id="countdown">
+                          <p id="countdowntitle">Dni do wakacji:</p>
+                          <p id="demo"></p>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="space"></div>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>Linux</h1>
+            </div>
+            <p>
+                <b>Charakterystyka</b> <br>
+                Powstał w 1991 roku na otwartej licencji GNU, jądro monolityczne, system plików EXT..., <br>
+                Oferuje wielozadaniowość, wielodostęp oraz dobre zabezpieczenia danych. <br>
+                System <b>Linux</b> może być zainstalowany na dowolnej partycji, zarówno podstawowej jak i logicznej. <a href="http://releases.ubuntu.com/" target="_blank">Linux pod maszynę wirtualną.</a> <br>
+                Partycji podstawowych może być co najwyżej 4. Dlatego wymyślono partycje rozszerzone. <br>
+                Zobacz film (długi!): <br>
+                <a href="https://www.youtube.com/watch?v=B7AVlP4GpZQ" target="_blank">Zarządzanie dyskami w środowisku Linux</a><br>
+                <br>
+                W systemach z rodziny Unix partycje znajdują się w folderach /dev/hdxy (dyski ATA) lub /dev/sdxy (dyski SATA, SCSI, zewnętrzne dyski USB i inne). <br>
+                <br>
+                <b>Popularne systemy plików linuxa:</b> Minix, xia, Ext, Ext2, Ext3, Ext4, umsdos, msdos, ReiserFS, vfat, XFS, proc, JFS, smb, NFS, ncp, Swap, iso9660, Sysv, hpfs, Affs, ufs <br>
+                <br>
+                <b>Minix –</b> pierwszy system plików wykorzystywany w linuxie, który został stworzony jeszcze przed powstaniem linuxa dla systemu operacyjnego o nazwie MINIX. <br>
+                <br>
+                <b>Posiadał kilka ograniczeń:</b> <br>
+                •długość nazwy pliku maksymalnie 14 znaków, (po pewnym czasie zwiększono do 30 znaków) <br>
+                •wielkośc partycji nie większa niż 64 MB, <br>
+                <br>
+                <b>Ext (EXTENDED FILE SYSTEM) –</b> następca Minix File System, dopuszczał pliki i partycje do rozmiaru 2 GB oraz długości nazw plików do 255 znaków. Miał jedną dużą wadę, która spowodowała, że nie stał się popularny: sposób zapamiętywania wolnych bloków i węzłów doprowadzał do znacznej fragmentacji dysku co wpływało negatywnie na wydajność systemu. <br>
+                <br>
+                <b>Ext2 -</b> zastąpił ext i w krótkim czasie stał się podstawowym systemem plików dla linuxa. W porównaniu do poprzednika ma wiele zalet: <br>
+                - obsługuje partycje o wielkości do 4 TB, pliki o wielkości do 2 GB, <br>
+                - rozpoznaje uszkodzenie systemu plików, <br>
+                - automatycznie naprawia uszkodzone sektory za pomocą programu e2fsck, <br>
+                - automatycznie sprawdza system po awarii i co określony czas, posiada wysoką wydajność dzięki przeciwdziałanie fragmentacji <br>
+                <br>
+                <b>Wady:</b> <br>
+                - długotrwałe sprawdzanie systemu plików po niepoprawnym zamknięciu, <br>
+                - niska wydajność dla bardzo małych plików, <br>
+                - mało efektywna obsługa katalogów. <br>
+                <br>
+                <b>Ext3 -</b> nowoczesny system plików oparty na ext2. Domyślny w większości dystrybucji systemu GNU/Linux opartych na jądrze2.4 oraz nowszych. <br>
+                <br>
+                <b>Ext4 -</b> Rozwój systemu ext4 rozpoczął się w 2006 roku wraz z opracowaniem dwóch zmian dla ext3. Pierwsza z nich rozszerzyła wielkość numeru bloku do 48 bitów, druga zaś zastąpiła mechanizm pośredniego adresowania bloków przez tzw. extenty, a więc obszary bloków danych. System plików ext4 pracuje z 48-bitowymi numerami bloków przy standardowej wielkości bloku  wynoszącej 4 kilobajty. Dzięki temu wielkość systemu plików może wynosić do 248 bloków po 4 kB, a więc jeden eksabajt (1024 petabajty), zamiast jak w przypadku ext3 – 16 terabajtów. <br>
+                <br>
+                <b>Dystrybucje:</b> <br>
+                - Debian <br>
+                - Ubuntu <br>
+                - Fedora <br>
+                - RedHat <br>
+                - Aurox <br>
+                - Mandriva. <br>
+                <br>
+                <b>Prawa dostępu mogą  być reprezentowane przez cyfry. Możliwe kombinacje:</b> <br>
+                ---      0   brak praw <br>
+                --x     1  prawo do uruchomienia <br>
+                -w-    2   prawo do zapisu <br>
+                -wx   3   prawo do zapisu i uruchomienia <br>
+                r--     4   prawo do odczytu <br>
+                r-x    5   prawo do odczytu i uruchomienia <br>
+                rw-   6   prawo do odczytu i zapisu <br>
+                rwx  7   prawo do odczytu, zapisu i uruchomienia <br>
+                <br>
+                <b>Cyfrowa liczba oznacza wówczas kolejno uprawnienia: właściciela, grupy oraz pozostałych użytkowników.</b> <br>
+                <br>
+                <a href="https://youtu.be/-7E0Ut4GUuc" target="_blank">Kurs ubuntu 14</a> <br>
+                <a href="http://wazniak.mimuw.edu.pl/images/a/ae/Bsi_01_lab.pdf" target="_blank">Uprawnienia w Linux</a> <br>
+                <br>
+                <b>Linki:</b> <br>
+                <a href="https://www.youtube.com/watch?v=UgBX9-OHgQ8" target="_blank">Linux od podstaw yu</a> <br>
+                <a href="https://ubuntu.pl/czytelnia/2007/07/25/katalogi-w-linuksie/" target="_blank">Katalogi Ubuntu</a> <br>
+                <a href="https://pl.wikibooks.org/wiki/Linux/System_plików/Drzewo_katalogów" target="_blank">Katalogi w linuxie</a> <br>
+                <a href="https://www.dobreprogramy.pl/Struktura-drzewa-katalogow-systemu-Linux,News,11405.html" target="_blank">Prosta teoria struktury drzewa</a> <br>
+                <a href="https://ubuntu.pl/" target="_blank">Ubuntu - pl</a> <br>
+                <a href="https://soisk.info/index.php/Linux_Ubuntu_-_zarządzanie_sieciami" target="_blank">Zarządzanie sieciami</a> <br>
+                <a href="https://linuxiarze.pl/pakiety_debian1/" target="_blank">Instalacja pakietów</a> <br>
+                <a href="https://rufus.ie/" target="_blank">Tworzenie bootowalnego pen-drive'a</a> <br>
+                <a href="https://techniczny.net/jak-pod-linuxem-dodac-uzytkownika-i-nadac-mu-prawa-do-sudo/" target="_blank">Dodanie do grupy</a> <br>
+                <a href="https://ubuntix.pl/jak-dostosowa-motywy-na-pulpicie-ubuntu-za" target="_blank">Interface graficzny_a1</a> <br>
+                <a href="https://www.youtube.com/watch?v=YBhLle4pJ6k&fbclid=IwAR0JYKY6lg4YmhjUT2UTUGmR7zRX6zB5yhX6ge5Pu6WFkPI6hCwIPlfF8nQ" target="_blank">Interface18 - yu1</a> <br>
+                <a href="https://www.youtube.com/watch?v=tZIW3KSIZ4w" target="_blank">Ubuntu16 - yu2</a> <br>
+                <br>
+                <b>Monitorowanie sytemu operacyjnego Linux:</b> <br>
+                <b>Syslog -</b> program, jedno z najważniejszych narzędzi systemowych w systemie operacyjnym Linux. <br>
+                Umożliwia rejestrowanie zdarzeń zachodzących w systemie przy pomocy scentralizowanego mechanizmu. Pozwala na rejestrowanie informacji pochodzących ze źródeł: zgłoszeń przekazywanych przez bibliotekę systemową oraz informacji pochodzących od jądra systemu. Program ten działający w tle dokonuje sortowania wpisów i decyduje co zrobić z informacją, stosując dwa kryteria przy podjęciu decyzji: priorytet i źródło komunikatu. <br>
+                Konfiguracja programu odbywa się za pomocą pliku syslog.conf. <br>
+                <br>
+                <b>nmon -</b> monitoruje CPU, pamięć, obciążenie sieci, aktywność na dyskach oraz topowe procesy. <br>
+                Program może pracować w dwóch trybach. Pierwszy z nich to live mode, kiedy na bieżąco pokazuje dane na konsoli. W drugim trybie <b>zbiera on dane i zapisuje do pliku.</b> W tym drugim przypadku aplikacje należy uruchomić z parametrami np.: nmon -t -f -s2 -c 30. <br>
+                Parametr -t określa, że chcemy zbierać informacje o procesorach, -f nakazuje zapisać dane do pliku, -s2 jest informacją o tym, że dane będą zbierane co 2 sekundy, a -c 30 określa, że zostanie wykonane 30 pobrań danych.Autor - Nigel Griffiths (nmon – Nigel monitor) – autor programu, jest inżynierem firmy IBM zatrudnionym w dziale pSeries Technical Support. <br>
+                <br>
+                <b>ps -</b> wypisuje stan procesów <br>
+                <b>ps a -</b> dokładniejsze wypisanie stanów procesów <br>
+                <b>ls -l -</b> polecenie wypisuje zawartość katalogu wraz z uprawnieniami <br>
+                <br>
+                <b>Przydatne linki:</b> <br>
+                <a href="https://www.benchmark.pl/testy_i_recenzje/ubuntu-lub-mint-obok-windows-10-instalacja-krok-po-kroku.html" target="_blank">Instalacja ubuntu obok Windows10</a> <br>
+                <a href="https://www.benchmark.pl/testy_i_recenzje/co-warto-zrobic-po-zainstalowaniu-ubuntu.html" target="_blank">10 rzeczy po instalacji Ubuntu</a> <br>
+                <a href="https://www.youtube.com/watch?v=cfLxlFxNGuc" target="_blank">Praca w terminalu</a> <br>
+                <a href="https://pl.wikibooks.org/wiki/Ubuntu/Aktualizacja_systemu" target="_blank">Aktualizacja systemu+apt</a> <br>
+                <a href="https://www.guru99.com/introduction-to-shell-scripting.html" target="_blank">Bdb po angielsku</a> <br>
+                <br>
+                <b>Skrypty i automatyczne uruchamianie zadań:</b> <br>
+                <a href="https://pl.if-koubou.com/articles/how-to/how-to-create-and-run-bash-shell-scripts-on-windows-10.html" target="_blank">Skrypty Linuxa w Windows10</a> <br>
+                <a href="https://backupuj.pl/jak-napisac-skrypt-w-systemie-linux/" target="_blank">Jak napisać skrypt?</a> <br>
+                <a href="http://linuxwiki.pl/wiki/Nano" target="_blank">Edytor nano</a> <br>
+                <a href="https://www.youtube.com/watch?v=FiOej5xYLYc" target="_blank">Tworzenie prostych skryptów</a> <br>
+                <a href="https://www.youtube.com/watch?v=ie3yjchMCIE" target="_blank">Pierwszy skrypt</a> <br>
+                <a href="https://lb-linux.tumblr.com/AutomatyczneUruchamianieZadan" target="_blank">Tworzenie autoexec</a> <br>
+                <a href="http://greszata.pl/soisk/klasa_4/2_administrowanie_systemem_linux/33_34_automatyczne_wykonywanie_zadan.pdf" target="_blank">Lista zadań</a> <br>
+                <a href="https://strefakursow.pl/kursy/it_i_oprogramowanie/kurs_linux_dla_kazdego" target="_blank">Programowanie w linuxie</a> <br>
+                <br>
+                <b>W poniższej tabelce  lista linuksowych odpowiedników  katalogów systemowych systemu Windows.</b>
+                <div class="table_1_div">
+                    <iframe class="table_1" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTDs_Mfcr5P7_FS4YhCecZOAkTExqaW8pZLzrryRLYdCJqUSyhv5wxmlHCT_aut2NT8IlB0tlZ02l3R/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="triple-pres-small-div">
+                    <iframe class="presentation" id="triple-pres-small" src="https://drive.google.com/file/d/1Yfq4HGg6zGX-u345fv4BDGIzrm2Ckqpv/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="triple-pres-small-div">
+                    <iframe class="presentation" id="triple-pres-small" src="https://drive.google.com/file/d/1Vs1wWXyknu5aGhzvJadwifFEGGhYG_Tf/preview" frameborder="0"></iframe>
+                </div>
+                <div class="presentation_div" id="triple-pres-small-div">
+                    <iframe class="presentation" id="triple-pres-small" src="https://drive.google.com/file/d/1EqWJLqDTomY0D2Xko2a0O4ReXvvOc36k/preview" frameborder="0"></iframe>
+                </div>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Anna Śmigielska 2020&copy; utwór dostępny na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.pl" target="_blank">Creative Commons</a></p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/countdown.js"></script>
+</body>
+</html>
